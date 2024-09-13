@@ -11,8 +11,7 @@
 <body>
     <header class="header">
         <a href="./index.html" class="logo">Logo</a>
-        <!--Por ahora así, después seguramente un <div> en donde esté el logo y la funcionalidad para volver al Home-->
-
+        <!--Por ahora así, después seguramente un <div> en donde esté el logo y la funcionalidad para volver al Home.-->
         <div class="search-bar">
             <input type="search" list="course-list" placeholder="Buscar cursos...">
             <datalist id="course-list">
@@ -22,15 +21,120 @@
                 <option value="Curso de Python">
             </datalist>
         </div>
-
         <div class="cart">
-            <div class="button button--cart">
-                <img src="../assets/shopping-cart_1413908.png" alt="cart-icon" srcset="">
+            <button>
+                <img src="../trabajo-practico/assets/shopping-cart_1413908 .png" alt="Carrito" srcset="">
                 <span>0</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="slider">
+            <div class="slider__item">
+                <img class="course" src="../trabajo-practico/assets/programacion-2846417.jpg" alt="Imagen del curso">
+                <div class="course-info">
+                    <h1 class="course-type">Curso de HTML</h1>
+                    <h3>Principiantes, intermedios y avanzados</h3>
+                </div>
+            </div>
+            <div class="slider__navegation">
+                <button>
+                    <img class="button arrow--left" src="../trabajo-practico/assets/arrow-left_7482887.png"
+                        alt="Mover izquierda">
+                </button>
+                <button>
+                    <img class="button arrow--right" src="../trabajo-practico/assets/arrow-right_7482887.png"
+                        alt="Mover derecha">
+                </button>
+            </div>
+        </section>
+        <!-- Si alguno quiere revisar el CSS del slider, joya. No sé bien que tan "prolijo" quedó. -->
+
+        <section class="inscription">
+            <h2 class="inscription-guide">Cómo inscribirse en un curso</h2>
+            <ol class="inscription-steps">
+                <li class="inscription-item">
+                    <img src="../trabajo-practico/assets/course_7725837.png" alt="Seleccionar un curso">
+                    <span>Busca y selecciona un curso.</span>
+                </li>
+                <li class="inscription-item">
+                    <img src="../trabajo-practico/assets/credit-cards_3344835.png" alt="Pagar inscripcion">
+                    <span>Inscríbete y paga en línea.</span>
+                </li>
+                <li class="inscription-item">
+                    <img src="../trabajo-practico/assets/online-education_12280449.png" alt="Comienza a aprender">
+                    <span>Comienza tu aprendizaje.</span>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2 class="featured-courses">Destacados</h2>
+            <div class="courses-grid">
+                <article class="course-card">
+                    <h3>Curso de HTML</h3>
+                    <p>Duración: 10 horas</p>
+                    <p>Precio: $50</p>
+                    <button>Ver Detalles</button>
+                </article>
+                <article class="course-card">
+                    <h3>Curso de CSS</h3>
+                    <p>Duración: 12 horas</p>
+                    <p>Precio: $60</p>
+                    <button>Ver Detalles</button>
+                </article>
+                <article class="course-card">
+                    <h3>Curso de JavaScript</h3>
+                    <p>Duración: 16 horas</p>
+                    <p>Precio: $70</p>
+                    <button>Ver Detalles</button>
+                </article>
+                <article class="course-card">
+                    <h3>Curso de Python</h3>
+                    <p>Duración: 14 horas</p>
+                    <p>Precio: $40</p>
+                    <button>Ver Detalles</button>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="payment-methods">Medios de Pago</h2>
+            <p class="payment-methods--aclaration">Aceptamos pagos a traves de las siguientes tarjetas</p>
+            <div class="payments-grid">
+                <img class="payment-methods--item" src="../trabajo-practico/assets/visa-svgrepo-com.svg" alt="Visa">
+                <img class="payment-methods--item" src="../trabajo-practico/assets/mastercard-svgrepo-com.svg"
+                    alt="MasterCard">
+                <img class="payment-methods--item" src="../trabajo-practico/assets/amex-svgrepo-com.svg"
+                    alt="American Express">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h3>Datos del Grupo</h3>
+                <p>Foresi Matias - 45870487</p>
+                <p>-</p>
+                <p>-</p>
+                <p>-</p>
+            </div>
+            <div class="footer-column">
+                <h3>Menú Inferior</h3>
+                <ul>
+                    <li><a href="./index.html">Homepage</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Síguenos</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
             </div>
         </div>
-        
-    </header>
+    </footer>
 </body>
 
 </html>

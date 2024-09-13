@@ -1,8 +1,38 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/*------ Botones ------*/
+button {
+    padding: 8px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.cart button {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.slider__navegation button {
+    background-color: transparent;
+}
+
+.course-card button {
+    margin-top: auto;
+    background-color: #dddddd;
+}
+
+button:hover {
+    background-color: dimgrey;
+}
+
+/*---------------------*/
+
+/*------- Header -------*/
 .header {
     height: 56px;
     box-sizing: border-box;
@@ -21,19 +51,145 @@
 
 .header .search-bar input {
     padding: 10px;
-    width: 300px;
-}
-
-/*--- Estilo Botones ---*/
-.button {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-}
-
-.button:hover {
-    background-color: dimgrey;
+    width: 400px;
     border-radius: 50px;
 }
+
+/*----------------------*/
+
+/*------- Slider -------*/
+.slider__item,
+.course {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 400px;
+}
+
+.slider__item .course-info {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    color: #ffffff;
+}
+
+.slider__item .course-type {
+    font-size: 40px;
+}
+
+.slider__navegation {
+    position: absolute;
+    top: 232px;
+}
+
+/*----------------------*/
+
+/*- Pasos inscripcion - */
+.inscription-guide {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.inscription-steps {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.inscription-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.inscription-item span {
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+/*----------------------*/
+
+/*----- Destacados -----*/
+.featured-courses {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.courses-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+.course-card {
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 16px;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*----------------------*/
+
+/*------ Tarjetas ------*/
+.payment-methods {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.payment-methods--aclaration {
+    text-align: center;
+}
+
+.payments-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.payment-methods--item {
+    width: 200px;
+    height: 200px;
+}
+
+/*----------------------*/
+
+/*------- Footer -------*/
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
 /*----------------------*/
