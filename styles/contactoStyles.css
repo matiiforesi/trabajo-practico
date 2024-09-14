@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    height: 3.5rem;
+    box-sizing: border-box;
+    background-color: #000000;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header .search-bar input {
+    padding: .625rem;
+    width: 18.75rem;
+}
+
+/*--- Estilo Botones ---*/
+.button {
+    color: #ffffff;
+    text-decoration: none;
+    padding: .625rem;
+    display: block;
+}
+
+.button:hover {
+    background-color: dimgrey;
+    border-radius: 3.125rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+
+    
+}
+
+.contact-form {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.contact-form__items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 40%;
+    margin-left: 5%;
+    
+
+    .contact-form__input {
+        padding: .3125rem;
+        height: 1.875rem;
+        border-radius: .5rem;
+        border: .0625rem solid black;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    
+
+    .contact-form__textarea {
+   
+    resize: none;
+   width: 100%;
+   height: 12.5rem;
+   outline: none;
+   padding: .3125rem;
+   box-sizing: border-box;
+        
+}
+}
+
+.contact-info {
+    
+    align-self: flex-start;
+    border: .0625rem solid black;
+    width: 50rem;
+    height: 21.6875rem;
+    width: 40%;
+    margin-right: 5%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+.contact-form__submit {
+    width: 5rem;
+    border-radius: .3125rem;
+    border: none;
+    color: white;
+    background-color: gray;
+    height: 2.1875rem;
+    align-self: flex-end;
+
+}
+
+.contact-form__submit:hover {
+background-color: rgb(75, 75, 75);
+}
+
+.location-section {
+    margin-top: 3.125rem;
+    width: 100%;
+   text-align: center;
+    height: 100%;
+
+    .location-section__map {
+        border: .0625rem solid black;
+        height: 37.5rem;
+        margin: 1.25rem;
+        margin-bottom: 2.5rem;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+}
+
+.footer-container {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: footer;
+    height: 12.5rem;
+
+    
+    .footer__group-info, .footer__menu, .footer__social-links {
+        width: 25%;
+        height: 80%;
+        border: .0625rem solid gray;
+
+    }
+
+    
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "header" 56px
+    "main" auto
+    "footer" auto
+    ;
+    align-items: end;
+}

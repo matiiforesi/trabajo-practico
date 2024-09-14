@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    height: 56px;
+    box-sizing: border-box;
+    background-color: #000000;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header .search-bar input {
+    padding: 10px;
+    width: 300px;
+}
+
+/*--- Estilo Botones ---*/
+.button {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.button:hover {
+    background-color: dimgrey;
+    border-radius: 50px;
+}
+.main {
+    width: 100%;
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.course-registration {
+    margin: 2.5rem;
+}
+
+
+
+
+
+.field {
+    display: flex;
+    gap: 1.25rem;
+    padding-top: 1.25rem;
+    
+    input {
+        padding: .3125rem;
+        width: 31.25rem;
+        height: 1.875rem;
+        border-radius: .3125rem;
+        outline: none;
+    }
+
+    button {
+        background:none;
+        border: none;
+        cursor: pointer;
+        align-self: center;
+    }
+
+    
+}
+
+.add-person {
+    margin-top: 1.25rem;
+    display: flex;
+    align-items: center;
+    
+    img {
+        cursor: pointer;
+    }
+
+    p {
+        margin-left: .625rem;
+        cursor: pointer;
+    }
+    
+}
+
+.registration-fee {
+    margin-top: 1.25rem;
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+
+    .fee-amount {
+        padding: .3125rem;
+        width: 2.5rem;
+        height: 1.25rem;
+        color: white;
+        background-color: #000;
+    }
+
+    .btn-confirm {
+        cursor: pointer;
+        color: white;
+        padding: .625rem;
+        background-color: gray;
+        border-radius: .625rem;
+        height: 2.5rem;
+        width: 6.875rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+
+    .btn-confirm:hover{
+        background-color: rgb(75, 75, 75);
+    }
+
+}
+
+.footer-container {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: footer;
+    height: 12.5rem;
+
+    
+    .footer__group-info, .footer__menu, .footer__social-links {
+        width: 25%;
+        height: 80%;
+        border: 1px solid gray;
+
+    }
+
+    
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "header" 5rem
+    "main" auto
+    "footer" 12.5rem
+    ;
+}
+
+
+

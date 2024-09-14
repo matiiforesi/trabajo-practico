@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/inscripcion.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de inscripción</title>
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html" class="logo">Logo</a>
+        <!--Por ahora así, después seguramente un <div> en donde esté el logo y la funcionalidad para volver al Home-->
+
+        <div class="search-bar">
+            <input type="search" list="course-list" placeholder="Buscar cursos...">
+            <datalist id="course-list">
+                <option value="Curso de HTML">
+                <option value="Curso de CSS">
+                <option value="Curso de JavaScript">
+                <option value="Curso de Python">
+            </datalist>
+        </div>
+
+        <div class="cart">
+            <div class="button button--cart">
+                <img src="assets/shopping-cart_1413908.png" alt="cart-icon" srcset="">
+                <span>0</span>
+            </div>
+        </div>
+        
+    </header>
+    <main class="main">
+       <div class="course-registration">
+        <h2>Titulo curso</h2>
+        <h3>Inscripcion</h3>
+    <div class="fields">
+      <div class="field">
+        <input type="text" placeholder="Ingrese el nombre">
+        <input type="text" placeholder="Ingrese el apellido">
+        <input type="text" placeholder="Ingrese el DNI">
+        <button type="submit">
+            <img src="assets/circulo-negativo.png" alt="delete">
+        </button>
+    </div>
+      <div class="field">
+        <input type="text" placeholder="Ingrese el nombre">
+        <input type="text" placeholder="Ingrese el apellido">
+        <input type="text" placeholder="Ingrese el DNI">
+        <button type="submit">
+            <img src="assets/circulo-negativo.png" >
+        </button>
+    </div>
+      <div class="field">
+        <input type="text" placeholder="Ingrese el nombre">
+        <input type="text" placeholder="Ingrese el apellido">
+        <input type="text" placeholder="Ingrese el DNI">
+        <button class="submit" type="submit">
+            <img src="assets/circulo-negativo.png" alt="delete">
+        </button>
+    </div>
+    </div>  
+    <div class="add-person">
+        <img src="assets/agregar.png" alt="add">
+        <p>Agregar persona</p>
+    </div>
+<div class="registration-fee">
+    <div class="fee-amount">$000.-</div>
+    <button class="btn-confirm">INSCRIBIRSE<button>
+</div>
+</div>
+    </main>
+    <footer class="footer-container">
+        <div class="footer__group-info">Datos del grupo</div>
+        <div class="footer__menu">Menu inferior</div>
+        <div class="footer__social-links">Links a redes sociales</div>
+    </footer>
+</body>
+</html>

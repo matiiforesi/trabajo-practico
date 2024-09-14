@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/contactoStyles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de inscripción</title>
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html" class="logo">Logo</a>
+        <!--Por ahora así, después seguramente un <div> en donde esté el logo y la funcionalidad para volver al Home-->
+
+        <div class="search-bar">
+            <input type="search" list="course-list" placeholder="Buscar cursos...">
+            <datalist id="course-list">
+                <option value="Curso de HTML">
+                <option value="Curso de CSS">
+                <option value="Curso de JavaScript">
+                <option value="Curso de Python">
+            </datalist>
+        </div>
+
+        <div class="cart">
+            <div class="button button--cart">
+                <img src="assets/shopping-cart_1413908.png" alt="cart-icon" srcset="">
+                <span>0</span>
+            </div>
+        </div>
+        
+    </header>
+    <main class="main">
+       <section class="contact-section">
+        <h2>CONTACTO</h2>
+    <form class="contact-form">
+     <div class="contact-form__items">
+        <input class="contact-form__input"  id="nombre_y_apellido" type="text" name="nombre y apellido" placeholder="Ingrese su nombre y apellido" required>
+        <input class="contact-form__input"  id="email" type="email" name="Correo Electronico" placeholder="Ingrese su correo electronico" required>
+        <input class="contact-form__input" id="tel-number" type="number" name="Número telefonico" placeholder="Ingrese su número telefonico (OPCIONAL)">
+       <textarea id="comentario" class="contact-form__textarea" name="comentario" placeholder="¿Cual es su consulta?" required></textarea>
+       <button class="contact-form__submit" type="submit">ENVIAR</button>
+    </div>
+    <div class="contact-info">
+        DATOS DE CONTACTO
+    </div>    
+</form>  
+
+    
+
+<div class="location-section">
+    <h2>UBICACIÓN</h2>
+    <div class="location-section__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.36433397228!2d-58.565380123371014!3d-34.67075316104308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses-419!2sar!4v1726080364632!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+    
+</section>
+    </main>
+    <footer class="footer-container">
+        <div class="footer__group-info">Datos del grupo</div>
+        <div class="footer__menu">Menu inferior</div>
+        <div class="footer__social-links">Links a redes sociales</div>
+    </footer>
+</body>
+</html>
