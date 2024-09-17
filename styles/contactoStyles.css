@@ -3,39 +3,6 @@
     margin: 0;
 }
 
-.header {
-    height: 3.5rem;
-    box-sizing: border-box;
-    background-color: #000000;
-    padding: .5rem 1rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.header .logo {
-    font-size: 1.875rem;
-    font-weight: bold;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.header .search-bar input {
-    padding: .625rem;
-    width: 18.75rem;
-}
-
-/*--- Estilo Botones ---*/
-.button {
-    color: #ffffff;
-    text-decoration: none;
-    padding: .625rem;
-    display: block;
-}
-
-.button:hover {
-    background-color: dimgrey;
-    border-radius: 3.125rem;
-}
 
 .main {
     display: flex;
@@ -137,33 +104,7 @@ background-color: rgb(75, 75, 75);
 
 }
 
-.footer-container {
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    grid-area: footer;
-    height: 12.5rem;
+
 
     
-    .footer__group-info, .footer__menu, .footer__social-links {
-        width: 25%;
-        height: 80%;
-        border: .0625rem solid gray;
 
-    }
-
-    
-}
-
-body {
-    height: 100vh;
-    display: grid;
-    grid-template: 
-    "header" 56px
-    "main" auto
-    "footer" auto
-    ;
-    align-items: end;
-}
