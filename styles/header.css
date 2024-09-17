@@ -1,0 +1,51 @@
+/*------- Header -------*/
+
+.header {
+    height: 4em;
+    box-sizing: border-box;
+    background-color: #000000;
+    padding: 0.5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .home .logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header .search-bar{
+    width: 30%;
+}
+
+.header .search-bar input {
+    padding: 1em;
+    width: 100%;
+    border-radius: 4em;
+}
+
+.header .contenedor-botones{
+    display: flex;
+    justify-content: right;
+    gap: 1em;
+    width: 25%;
+}
+
+.cart {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.cart:hover {
+    background-color: dimgrey;
+}
+
+.button-der{
+    background-color: grey;
+    border-radius: 50%;
+    cursor:pointer;
+    color: #ffffff;
+}
