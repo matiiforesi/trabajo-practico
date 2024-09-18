@@ -1,57 +1,57 @@
 /*-----FOOTER-----*/
-.contenedor-footer{ 
+.contenedor-footer {
     background-color: #26272b;
     color: #737373;
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 300;
-    letter-spacing: 0.5px; 
+    letter-spacing: 0.5px;
     padding: 10px 5%;
 }
 
 /*ALINEA LAS 3 COLUMNAS EN FILA*/
-#fila{
+#fila {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
 /*TITULOS DE COLUMNAS*/
-#fila h5{
-    font-size:16px;
-    font-weight: 300;     
+#fila h5 {
+    font-size: 16px;
+    font-weight: 300;
     letter-spacing: 3px;
     color: white;
     margin: 15px 0px;
 }
 
-.listas-footer{
+.listas-footer {
     list-style-type: none;
     padding-left: 0px;
 }
 
-.listas-footer li{
+.listas-footer li {
     margin-bottom: 10px;
     font-weight: 300;
 }
 
-.listas-footer a{
+.listas-footer a {
     text-decoration: none;
     color: inherit;
 }
 
-.listas-footer a:hover{
+.listas-footer a:hover {
     color: rgb(61, 61, 247);
 }
 
 /*COLUMNA DE ICONOS*/
-.contenedor-der{
+.contenedor-redes {
     display: flex;
     justify-content: center;
     padding: 0px;
     list-style-type: none;
 }
 
-.iconos{
+.iconos {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -61,16 +61,18 @@
     margin: 20px 5px;
 }
 
-.iconos.facebook:hover{
-  background-color:#0884f0;
+.iconos.facebook:hover {
+    background-color: #0884f0;
 }
-.iconos.twitter:hover{
-  background-color:#6dd8ff;
+
+.iconos.twitter:hover {
+    background-color: #6dd8ff;
 }
-.iconos.instagram:hover{
-  background-color:#ea4c89;
+
+.iconos.instagram:hover {
+    background-color: #ea4c89;
 }
-.iconos.linkedin:hover{
-  background-color: #007bb6;
+
+.iconos.linkedin:hover {
+    background-color: #007bb6;
 }
-/*-----HASTA ACA FOOTER-----*/

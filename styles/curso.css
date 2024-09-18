@@ -1,83 +1,88 @@
-
-
-/*-----CSS DE CURSOS.HTML-----*/
-.contenedor-curso{
+/*-----CSS DE CURSO-----*/
+.contenedor-curso {
     display: flex;
     justify-content: left;
-    padding: 5% 10%;
+    align-items: flex-start;
     gap: 5%;
+    padding: 2% 10%;
 }
 
-li{
-    list-style: none;
-}
-
-.imagen-curso{
-    display: inline;
-}
-
-.imagen-curso img{
+.imagen-curso img {
     height: 10em;
     width: 10em;
 }
 
-.detalle-curso{
-    width: 50%;
-}
-
-.detalle-curso ul{
-    line-height: 2em;
-}
-
-.detalle-curso h3{
+.detalle-curso h3 {
     margin-bottom: 0.5em;
 }
 
-.boton-inscripcion{
-    background-color: green;
-    border-radius: 15%;
-    padding: 0.5em;
-    font-weight: bold;
-    margin: 5%;  
+.detalle-curso ul {
+    line-height: 2em;
 }
 
-.boton-inscripcion:hover{
-    background-color: lightgreen;
+li {
+    list-style: none;
+}
+
+.detalle-curso__descripcion {
+    font-size: 14px;
+}
+
+.boton-inscripcion {
+    background-color: #008000;
+    padding: 0.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.boton-inscripcion:hover {
+    background-color: #90ee90;
     cursor: pointer;
 }
 
-/*PARA EL DETAIL & SUMMARY*/
-.contenedor-detalle{
-    margin-top: 1.5em;
-    border-style: solid;
-    padding: 5%;;
+.boton-volver {
+    background-color: #2e2e2d;
 }
 
-.contenedor-detalle a{
+/*PARA EL DETAIL & SUMMARY*/
+.contenido-clase {
+    padding: 2% 10%;
+}
+
+.contenedor-detalle {
+    margin-top: 1.5em;
+    border-style: solid;
+    padding: 2%;
+    border-radius: 16px;
+}
+
+.contenedor-detalle a {
     text-decoration: none;
-    color: #33353D;
+    color: #33353d;
+}
+
+.titulo-unidad {
+    font-weight: bold
 }
 
 summary {
     display: flex;
-    list-style-position: outside;
     align-items: center;
     justify-content: space-between;
-    margin-left: 0;
-    padding: 0;
     margin-bottom: 1em;
-   }
+}
 
-  summary::-webkit-details-marker {
+summary::-webkit-details-marker {
     display: none;
-  }
-  
-  :root {
-    --fontColor: BLACK;
+}
+
+:root {
+    --fontColor: #000000;
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-caret-down-fill' viewBox='0 0 16 16' %3E%3Cpath fill='currentColor' d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z' /%3E%3C/svg%3E")
-  }
-  
-  summary::after {
+}
+
+summary::after {
     content: "";
     width: 18px;
     height: 18px;
@@ -88,85 +93,82 @@ summary {
     -webkit-mask-size: cover;
     background-color: var(--fontColor);
     transition: 0.2s;
-  }
-  
-  details[open]>summary::after {
+}
+
+details[open]>summary::after {
     transform: rotate(180deg);
-  }
+}
 
 /*ARTICLE*/
-article h3{
-    margin: 0 4em;
-}
-.contenedor-docente{
-    background-color: grey;
+.contenedor-docente {
+    background-color: #808080;
     padding: 1em 5em;
     display: flex;
     justify-content: left;
 }
 
-.contenedor-docente img{
+.contenedor-docente img {
     height: 5em;
     width: 5em;
     border-radius: 50%;
 }
 
-.contenedor-docente_detalle{
+.contenedor-docente_detalle {
     margin-left: 2em;
 }
 
-.estrella{
+.estrella {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: grey;
+    background-color: #808080;
     box-sizing: border-box;
     margin: 1% 0;
 }
 
-.estrella:hover{
-  background-color:#2e2e2d;
+.estrella:hover {
+    background-color: #2e2e2d;
 }
 
 /*ASIDE*/
-
-.contenedor-publi{
+.contenedor-publi {
     display: flex;
     justify-content: space-around;
     padding: 2em;
 }
 
-.publicidades{
+.publicidades {
     width: 15em;
     height: 19em;
     border-style: solid;
+    border-radius: 16px;
     padding: 0.5em;
     position: relative;
     /*el proximo elemento con absolut(top) SOLO
     podra llegar arriba hasta este relative*/
 }
 
-.imagen img{
+.imagen img {
     max-width: 100%;
 }
 
-.detalle-de-curso{
+.detalle-de-curso {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.detalle-de-curso span{
+.detalle-de-curso span {
     font-size: 1.5em;
     margin-left: 1em;
 }
 
-.detalle-de-curso-der{
+.detalle-de-curso-der {
     text-align: right;
     margin-top: 0.5em;
 }
 
-.publicidades-precio{
+.publicidades-precio {
     background: black;
     color: white;
     border-style: solid;
@@ -174,7 +176,7 @@ article h3{
     border-color: white;
     padding: 2px 15px;
     position: absolute;
-    right: 1em;;
+    right: 1em;
     top: 11em;
     border-radius: 3px;
     z-index: 10;

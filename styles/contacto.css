@@ -1,15 +1,7 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-
-
 .main {
     display: flex;
     flex-direction: column;
     padding: 1.25rem;
-
-    
 }
 
 .contact-form {
@@ -17,7 +9,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .contact-form__items {
@@ -26,7 +17,6 @@
     gap: 1.25rem;
     width: 40%;
     margin-left: 5%;
-    
 
     .contact-form__input {
         padding: .3125rem;
@@ -37,36 +27,28 @@
         box-sizing: border-box;
     }
 
-    
-
     .contact-form__textarea {
-   
-    resize: none;
-   width: 100%;
-   height: 12.5rem;
-   outline: none;
-   padding: .3125rem;
-   box-sizing: border-box;
-        
-}
+        resize: none;
+        width: 100%;
+        height: 12.5rem;
+        outline: none;
+        padding: .3125rem;
+        box-sizing: border-box;
+    }
+
 }
 
 .contact-info {
-    
     align-self: flex-start;
     border: .0625rem solid black;
     width: 50rem;
     height: 21.6875rem;
     width: 40%;
-    margin-right: 5%;   
+    margin-right: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
 }
-
-
 
 .contact-form__submit {
     width: 5rem;
@@ -76,17 +58,16 @@
     background-color: gray;
     height: 2.1875rem;
     align-self: flex-end;
-
 }
 
 .contact-form__submit:hover {
-background-color: rgb(75, 75, 75);
+    background-color: rgb(75, 75, 75);
 }
 
 .location-section {
     margin-top: 3.125rem;
     width: 100%;
-   text-align: center;
+    text-align: center;
     height: 100%;
 
     .location-section__map {
@@ -99,12 +80,5 @@ background-color: rgb(75, 75, 75);
             width: 100%;
             height: 100%;
         }
-
     }
-
 }
-
-
-
-    
-

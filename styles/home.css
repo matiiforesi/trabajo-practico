@@ -6,13 +6,13 @@
 .course-card button {
     margin-top: auto;
     background-color: #dddddd;
+    color: #000000;
 }
 
 .course-card button:hover {
     background-color: dimgrey;
+    color: #ffffff;
 }
-/*---------------------*/
-
 
 /*------- Slider -------*/
 .slider__item,
@@ -38,10 +38,8 @@
     position: absolute;
     top: 232px;
 }
-/*----------------------*/
 
-
-/*- Pasos inscripcion - */
+/*- Pasos inscripción - */
 .inscription-guide {
     font-size: 30px;
     text-align: center;
@@ -68,8 +66,6 @@
     font-size: 18px;
     padding-left: 10px;
 }
-/*----------------------*/
-
 
 /*----- Destacados -----*/
 .featured-courses {
@@ -96,8 +92,6 @@
     flex-direction: column;
     justify-content: space-between;
 }
-/*----------------------*/
-
 
 /*------ Tarjetas ------*/
 .payment-methods {
@@ -120,5 +114,3 @@
     width: 200px;
     height: 200px;
 }
-/*----------------------*/
-

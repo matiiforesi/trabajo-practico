@@ -1,16 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GiftCard</title>
+    <title>Gift Card</title>
     <link rel="stylesheet" href="./styles/giftCard.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/curso.css">
     <link rel="stylesheet" href="./styles/navbar.css">
 </head>
 
@@ -19,7 +17,7 @@
         <div class="home">
             <a href="./home.html" class="logo">Logo</a>
         </div>
-       
+
         <div class="search-bar">
             <input type="search" list="course-list" placeholder="Buscar cursos...">
             <datalist id="course-list">
@@ -35,7 +33,7 @@
                 <img src="../trabajo-practico/assets/shopping-cart_1413908 .png" alt="Carrito" srcset="">
                 <span>0</span>
             </button>
-            <button class="button button-der">Iniciar Sesión</button>
+            <button class="button button-der">Iniciar sesión</button>
             <button class="button button-der">Registrarse</button>
         </div>
 
@@ -49,65 +47,70 @@
         <section>
             <div class="contenedor-giftcard">
                 <div class="giftcard">
-                    <h2>Vista Previa</h2> 
-                    <div class="vistaPrevia" id="giftCardVistaPrevia" style="background-color: #ffffff;">
-                        <span id="nombreGiftcard">Gift Card para Destinatario</span>
-                        <br>
-                        <span class="valor" id="giftCardValor">$0.00</span>
-
+                    <h2>Vista Previa</h2>
+                    <div class="vistaPrevia">
+                        <span>Gift Card para Destinatario</span>
+                        <span class="valor">$0.00</span>
+                    </div>
                 </div>
-            </div>
-            <div class="detalle-giftcard">
-                <h1>Personalización de Gift Card</h1>
-                <input type="monto" placeholder="Nombre Destinatario" oninput="actualizar()">
-                <h4>Color</h4>
-                    <input type="radio" name="color" value="#000000" onclick="actualizar()"> 
-                    <input type="radio" name="color" value="#ff0000" onclick="actualizar()"> 
-                    <input type="radio" name="color" value="#0000ff" onclick="actualizar()">    
-                    <input type="radio" name="color" value="#ff0000" onclick="actualizar()"> 
-                    <input type="radio" name="color" value="#0000ff" onclick="actualizar()">    
-                <h4>Tamaño De Fuente</h4>
+
+                <div class="detalle-giftcard">
+                    <h1>Personalización de Gift Card</h1>
+                    <input type="text" placeholder="Nombre del destinatario" oninput="actualizar()">
+                    <h4>Color</h4>
+                    <input type="radio" name="color" value="#000000" onclick="actualizar()">
+                    <input type="radio" name="color" value="#ff0000" onclick="actualizar()">
+                    <input type="radio" name="color" value="#0000ff" onclick="actualizar()">
+                    <input type="radio" name="color" value="#ff0000" onclick="actualizar()">
+                    <input type="radio" name="color" value="#0000ff" onclick="actualizar()">
+                    <h4>Tamaño De Fuente</h4>
                     <input type="radio" name="fontSize" value="20px" onclick="actualizar()"> 20px
                     <input type="radio" name="fontSize" value="28px" onclick="actualizar()"> 28px
                     <input type="radio" name="fontSize" value="32px" onclick="actualizar()"> 32px
                     <input type="radio" name="fontSize" value="48px" onclick="actualizar()"> 48px
                     <input type="radio" name="fontSize" value="60px" onclick="actualizar()"> 60px
-                <h4>Monto $</h4>
-                    <input type="monto" oninput="actualizar()">
-                <h4>Ubicación</h4>
-                    <input type="radio" name="ubi" onclick="actualizar()"> 
-                    <input type="radio" name="ubi" onclick="actualizar()"> 
-                    <input type="radio" name="ubi" onclick="actualizar()"> 
-                <h4>Fondo</h4>
-                    <input type="radio" name="fondo" value="#000000" onclick="actualizar()"> 
-                    <input type="radio" name="fondo" value="#ff0000" onclick="actualizar()"> 
-                    <input type="radio" name="fondo" value="#0000ff" onclick="actualizar()">    
-                    <input type="radio" name="fondo" value="#ff0000" onclick="actualizar()"> 
-                    <input type="radio" name="fondo" value="#0000ff" onclick="actualizar()">    
-                <button class="submit">Confirmar</button>
-            </div>
+                    <h4>Monto</h4>
+                    <input type="number" placeholder="$" oninput="actualizar()">
+                    <h4>Ubicación del Monto</h4>
+                    <input type="radio" name="ubi" onclick="actualizar()">
+                    <input type="radio" name="ubi" onclick="actualizar()">
+                    <input type="radio" name="ubi" onclick="actualizar()">
+                    <h4>Fondo</h4>
+                    <input type="radio" name="fondo" value="#000000" onclick="actualizar()">
+                    <input type="radio" name="fondo" value="#ff0000" onclick="actualizar()">
+                    <input type="radio" name="fondo" value="#0000ff" onclick="actualizar()">
+                    <input type="radio" name="fondo" value="#ff0000" onclick="actualizar()">
+                    <input type="radio" name="fondo" value="#0000ff" onclick="actualizar()">
+                    <button class="submit">Confirmar</button>
+                </div>
         </section>
     </main>
+
     <footer class="contenedor-footer">
         <div id="fila">
             <div>
                 <h5>DATOS DEL GRUPO</h5>
                 <ul class="listas-footer">
-                    <li>NOMBRE 1 - DNI</li>
-                    <li>NOMBRE 2 - DNI</li>
-                    <li>NOMBRE 3 - DNI</li>
-                    <li>NOMBRE 4 - DNI</li>
+                    <li>Cicero Mora - 46022589</li>
+                    <li>Santillan Sabrina - 37351824</li>
+                    <li>Foresi Matias - 45870487</li>
+                    <li>Felipe Sgüerzo - 47061231</li>
                 </ul>
             </div>
 
             <div>
-                <h5>SOBRE NOSOTROS</h5>
+                <h5>MENÚ</h5>
                 <ul class="listas-footer">
-                    <li><a href="#">La empresa</a></li>
-                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./curso.html">Detalle de Curso</a></li>
+                    <li><a href="#"></a>Calendario</li>
+                    <li><a href="./giftCard.html">Gift Card</a></li>
+                    <li><a href="./inscripcion.html">Formulario de Inscripción</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </div>
-            <div class="contenedor-der">
+
+            <div class="contenedor-redes">
                 <div class="iconos facebook">
                     <a href="http://www.facebook.com" target="_blank">
                         <svg viewBox="-5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -132,6 +135,7 @@
                         </svg>
                     </a>
                 </div>
+
                 <div class="iconos twitter">
                     <a href="http://www.twitter.com" target="_blank">
                         <svg viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -156,6 +160,7 @@
                         </svg>
                     </a>
                 </div>
+
                 <div class="iconos instagram">
                     <a href="http://www.instagram.com" target="_blank">
                         <svg viewBox="0 0 24 24" id="meteor-icon-kit__regular-instagram" fill="none"
@@ -170,6 +175,7 @@
                         </svg>
                     </a>
                 </div>
+
                 <div class="iconos linkedin">
                     <a href="http://www.linkedin.com" target="_blank">
                         <svg fill="#818a91" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -194,13 +200,12 @@
             </div>
         </div>
 
-        <hr />
-
         <div class="listas-footer">
-            <p>2024, todos los derechos reservados
+            <p>© 2024, todos los derechos reservados.
                 <a href="#">LOGO</a>. <!--INSERTAR NOMBRE DE LA PAGINA-->
             </p>
         </div>
+
     </footer>
 </body>
 
