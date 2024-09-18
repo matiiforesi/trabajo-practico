@@ -26,7 +26,7 @@
     border-radius: 4em;
 }
 
-.header .contenedor-botones {
+.header .contenedor-botones-sesion {
     display: flex;
     justify-content: right;
     gap: 1em;

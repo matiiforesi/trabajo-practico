@@ -26,14 +26,21 @@ li {
 
 .detalle-curso__descripcion {
     font-size: 14px;
+    margin-left: 2em;
+    text-align: justify;
+}
+
+.contenedor-botones-curso{
+    display: flex;
+    gap: 1em;
+    padding-top: 2em;
 }
 
 .boton-inscripcion {
     background-color: #008000;
     padding: 0.5em;
     font-weight: bold;
-    margin-top: 20px;
-    margin-right: 20px;
+
 }
 
 .boton-inscripcion:hover {
@@ -43,6 +50,7 @@ li {
 
 .boton-volver {
     background-color: #2e2e2d;
+
 }
 
 /*PARA EL DETAIL & SUMMARY*/
@@ -165,7 +173,11 @@ details[open]>summary::after {
 
 .detalle-de-curso-der {
     text-align: right;
-    margin-top: 0.5em;
+    margin-top: 1em;
+}
+
+.detalle-de-curso-der h4{
+    margin-bottom: 1em;
 }
 
 .publicidades-precio {
