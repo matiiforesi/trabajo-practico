@@ -7,10 +7,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    ;
 }
 
 .header .home img {
     max-height: 3em;
+    margin: 0 4.5em;
 }
 
 .header .search-bar {
