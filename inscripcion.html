@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/inscripcion.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/inscripcion.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Inscripción</title>
@@ -15,26 +15,21 @@
 <body>
     <header class="header">
         <div class="home">
-            <a href="./home.html" class="logo">Logo</a>
+            <a href="./home.html"><img src="./assets/logo2.png" alt="logo"></a>
         </div>
 
         <div class="search-bar">
             <input type="search" list="course-list" placeholder="Buscar cursos...">
             <datalist id="course-list">
-                <option value="HTML">
-                <option value="CSS">
+                <option value="HTML & CSS">
                 <option value="JavaScript">
-                <option value="Python">
             </datalist>
         </div>
 
         <div class="contenedor-botones-sesion">
-            <button class="cart">
-                <img src="/assets/shopping-cart_1413908 .png" alt="Carrito">
-                <span>0</span>
-            </button>
-            <button class="button button-der">Iniciar sesión</button>
-            <button class="button button-der">Registrarse</button>
+            <a href="./carrito.html"><button class="cart"><img src="./assets/cart.png" alt="carrito"><span>0</span></button></a>
+            <a href="./inicioSesion.html"><button class="button-der">Iniciar sesión</button></a>
+            <a href="./registro.html"><button class="button-der">Registrarse</button></a>
         </div>
     </header>
 

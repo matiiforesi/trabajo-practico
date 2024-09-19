@@ -17,3 +17,7 @@ button:hover {
     background-color: dimgrey;
 }
 /*---------------------*/
+
+.link-no-deco {
+    text-decoration: none;
+}

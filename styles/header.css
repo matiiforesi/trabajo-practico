@@ -9,11 +9,8 @@
     justify-content: space-between;
 }
 
-.header .home .logo {
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #ffffff;
+.header .home img {
+    max-height: 3em;
 }
 
 .header .search-bar {
@@ -24,13 +21,13 @@
     padding: 1em;
     width: 100%;
     border-radius: 4em;
+    max-height: 3em;
 }
 
 .header .contenedor-botones-sesion {
     display: flex;
     justify-content: right;
     gap: 1em;
-    width: 25%;
 }
 
 .cart {
@@ -38,12 +35,7 @@
     color: #ffffff;
 }
 
-.cart:hover {
-    background-color: dimgrey;
-}
-
 .button-der {
     background-color: grey;
-    cursor: pointer;
-    color: #ffffff;
+    height: 3em;
 }
