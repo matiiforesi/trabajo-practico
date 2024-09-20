@@ -49,51 +49,112 @@
                 </div>
 
                 <div class="detalle-curso">
-                    <h3>NOMBRE DEL CURSO</h3>
+                    <h3>HTML & CSS</h3>
                     <ul>
-                        <li>Valor: $$$</li>
+                        <li>Valor: $300</li>
+                        <li>Modalidad: Presencial</li>
                         <li>Tiempo de dedicación necesario: XX hs.</li>
                         <li>Descripción del curso:
                             <p class="detalle-curso__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Totam, maxime minima odit
-                                iusto illum necessitatibus est recusandae quos, sapiente rem placeat delectus
-                                fugiat. Harum nisi provident optio numquam soluta placeat.</p>
+                                elit. Totam, maxime minima odit iusto illum necessitatibus est recusandae quos, sapiente
+                                rem placeat delectus
+                                fugiat. Harum nisi provident optio numquam soluta placeat. Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Praesentium in fugiat commodi explicabo corporis vero at
+                                esse inventore asperiores voluptatibus dignissimos, minima veniam atque velit corrupti
+                                facere nesciunt omnis amet!</p>
                         </li>
                         <li>Requisitos previos: ---.</li>
                     </ul>
                     <div class="contenedor-botones-curso">
-                        <button class="boton-inscripcion">INSCRIBIRSE</button>
-                        <button class="boton-volver">VOLVER</button>
+                        <a href="./inscripcion.html"><button class="boton-inscripcion">INSCRIBIRSE</button></a>
+                        <a href="./home.html"><button class="boton-volver">VOLVER</button></a>
                     </div>
                 </div>
             </div>
 
             <div class="contenido-clase">
                 <h3>CONTENIDOS POR CLASE</h3>
+
                 <details open class="contenedor-detalle">
                     <summary class="titulo-unidad">INTRODUCCIÓN</summary>
                     <ul>
-                        <li><a href="#">Video</a></li>
-                        <li><a href="#">Contenido</a></li>
-                        <li><a href="#">Evaluación</a></li>
+                        <li>
+                            <img src="./assets/pdf.jpg" class="icono-contenidos">
+                            <form class="lista-contenidos">
+                                <label for="video1"><a href="#">Presentación del contenido</a></label>
+                                <input class="formato-input" id="video1" type="checkbox" name="video1" value="video1">
+                            </form>
+                        </li>
+                        <li>
+                            <img src="./assets/grupal.png" class="icono-contenidos">
+                            <form class="lista-contenidos">
+                                <label for="video1"><a href="#">Ejercicios para trabajar en grupo</a></label>
+                                <input class="formato-input" id="video1" type="checkbox" name="video1" value="video1">
+                            </form>
+                        </li>
+                        <li>
+                            <img src="./assets/examen.JPG" class="icono-contenidos">
+                            <form class="lista-contenidos">
+                                <label for="video1"><a href="#">Presentación de las formas de Evaluación</a></label>
+                                <input class="formato-input" id="video1" type="checkbox" name="video1" value="video1">
+                            </form>
+                        </li>
                     </ul>
                 </details>
 
-                <details class="contenedor-detalle">
+                                <details open class="contenedor-detalle">
                     <summary class="titulo-unidad">UNIDAD 1</summary>
                     <ul>
-                        <li><a href="#">Video</a></li>
-                        <li><a href="#">Contenido</a></li>
-                        <li><a href="#">Evaluación</a></li>
+                        <li>
+                            <img src="./assets/pdf.jpg" class="icono-contenidos">
+                            <form class="lista-contenidos">
+                                <label for="video1"><a href="#">Contenido clases Unidad 1</a></label>
+                                <input class="formato-input" id="video1" type="checkbox" name="video1" value="video1">
+                            </form>
+                        </li>
+                        <li>
+                            <img src="./assets/grupal.png" class="icono-contenidos">
+                            <form class="lista-contenidos">
+                                <label for="video1"><a href="#">Ejercicios para trabajar en grupo</a></label>
+                                <input class="formato-input" id="video1" type="checkbox" name="video1" value="video1">
+                            </form>
+                        </li>
+                        <li>
+                            <img src="./assets/examen.JPG" class="icono-contenidos">
+                            <form class="lista-contenidos">
+                                <label for="video1"><a href="#">Evaluación Unidad 1</a></label>
+                                <input class="formato-input" id="video1" type="checkbox" name="video1" value="video1">
+                            </form>
+                        </li>
+
                     </ul>
                 </details>
 
-                <details class="contenedor-detalle">
+                <details open class="contenedor-detalle">
                     <summary class="titulo-unidad">UNIDAD 2</summary>
                     <ul>
-                        <li><a href="#">Video</a></li>
-                        <li><a href="#">Contenido</a></li>
-                        <li><a href="#">Evaluación</a></li>
+                        <li>
+                            <img src="./assets/pdf.jpg" class="icono-contenidos">
+                            <form class="lista-contenidos">
+                                <label for="video1"><a href="#">Contenido clases Unidad 2</a></label>
+                                <input class="formato-input" id="video1" type="checkbox" name="video1" value="video1">
+                            </form>
+                        </li>
+                        <li>
+                            <img src="./assets/grupal.png" class="icono-contenidos">
+                            <form class="lista-contenidos">
+                                <label for="video1"><a href="#">Ejercicios para trabajar en grupo</a></label>
+                                <input class="formato-input" id="video1" type="checkbox" name="video1" value="video1">
+                            </form>
+                        </li>
+                        <li>
+                            <img src="./assets/examen.JPG" class="icono-contenidos">
+                            <form class="lista-contenidos">
+                                <label for="video1"><a href="#">Evaluación Unidad 2</a></label>
+                                <input class="formato-input" id="video1" type="checkbox" name="video1" value="video1">
+                            </form>
+                        </li>
+
                     </ul>
                 </details>
             </div>
@@ -186,7 +247,8 @@
             </article>
         </section>
 
-        <aside class="contenedor-publi">
+        <aside class="contenedor-publicidad-cursos">
+
             <div class="publicidades">
                 <div class="imagen">
                     <img src="./assets/computadora.jpg" alt="imagen de curso">
@@ -195,8 +257,9 @@
                 <div class="detalle-de-curso">
                     <span><b>60hs</b></span>
                     <div class="detalle-de-curso-der">
-                        <h4>Nombre del curso</h4>
-                        <button class="boton-inscripcion">COMPRAR</button>
+                        <h4>Intermedio en JAVA</h4>
+                        <h6>Virtual</h6>
+                        <a href="./home.html"><button class="boton-inscripcion">Ver Detalle</button></a>
                         <div class="publicidades-precio">
                             <span>$0000</span>
                         </div>
@@ -212,10 +275,29 @@
                 <div class="detalle-de-curso">
                     <span><b>60hs</b></span>
                     <div class="detalle-de-curso-der">
-                        <h4>Nombre del curso</h4>
-                        <button class="boton-inscripcion">COMPRAR</button>
+                        <h4>Python desde cero</h4>
+                        <h6>Presencial</h6>
+                        <a href="./home.html"><button class="boton-inscripcion">Ver Detalle</button></a>
                         <div class="publicidades-precio">
-                            <span>$0.00</span>
+                            <span>$0000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="publicidades">
+                <div class="imagen">
+                    <img src="./assets/computadora.jpg" alt="imagen de curso">
+                </div>
+
+                <div class="detalle-de-curso">
+                    <span><b>60hs</b></span>
+                    <div class="detalle-de-curso-der">
+                        <h4>Programación Básica</h4>
+                        <h6>Presencial</h6>
+                        <a href="./cursoPresencial.html"><button class="boton-inscripcion">Ver Detalle</button></a>
+                        <div class="publicidades-precio">
+                            <span>$0000</span>
                         </div>
                     </div>
                 </div>
@@ -229,14 +311,16 @@
                 <div class="detalle-de-curso">
                     <span><b>60hs</b></span>
                     <div class="detalle-de-curso-der">
-                        <h4>Nombre del curso</h4>
-                        <button class="boton-inscripcion">COMPRAR</button>
+                        <h4>Introducción a JAVA</h4>
+                        <h6>Virtual</h6>
+                        <a href="./cursoVirtual.html"><button class="boton-inscripcion">Ver Detalle</button></a>
                         <div class="publicidades-precio">
                             <span>$0000</span>
                         </div>
                     </div>
                 </div>
             </div>
+        </aside>
     </main>
 
     <footer class="contenedor-footer">
@@ -350,6 +434,8 @@
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <div class="listas-footer">
             <p>© 2024, todos los derechos reservados.

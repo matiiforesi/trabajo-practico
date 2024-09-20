@@ -68,29 +68,13 @@
 }
 
 /*----- Destacados -----*/
-.featured-courses {
+.cursos-destacados h2 {
     font-size: 30px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     text-transform: uppercase;
     padding: 5px;
-}
-
-.courses-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px 0px;
-}
-
-.course-card {
-    border: 1px solid #000000;
-    border-radius: 8px;
-    padding: 16px;
-    height: 250px;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-top: 20px;
 }
 
 /*------ Tarjetas ------*/
@@ -98,6 +82,7 @@
     text-align: center;
     text-transform: uppercase;
     padding: 10px;
+    font-size: 30px;
 }
 
 .payment-methods--aclaration {
@@ -108,6 +93,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 1em;
 }
 
 .payment-methods--item {
