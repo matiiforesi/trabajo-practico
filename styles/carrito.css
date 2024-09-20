@@ -1,0 +1,170 @@
+
+.cesta-container{
+
+margin-left: 20%;
+margin-right: 20%;
+height: 70%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 600px;
+}
+
+.cesta-curso{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+    gap: 3.125rem;
+
+    img {
+        height: 4.25rem;
+        width: 120x;
+    }
+}
+
+.curso-desc {
+    display: flex;
+    gap: 1.25rem;
+    
+}
+
+.course-details{
+   display: flex;
+   flex-direction: column;
+   gap: .3125rem;
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+}
+
+.most-sold-p {
+    width: 8.125rem;
+    height: 1rem;
+    padding: .3125rem;
+    background-color: #ECEB98;
+    color: #3D3C13;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detalles-del-curso {
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+    font-size: 12px;
+    color: #6A6F73;
+
+    hr {
+        border: none; /* Elimina la línea por defecto */
+    height: 5.9px;
+    width: 5.9px;
+    align-self: center;
+    border-radius: 50%; /* Hace que el elemento sea redondo */
+    background-color: black; /* Color del punto */
+    background-color: #6A6F73;
+    }
+}
+
+.cart-precio-p {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.descuento {
+    text-decoration: line-through;
+    color: #6a6f73;
+}
+
+.pagar {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 0rem;
+    background-color:#A435F0;
+    font-size: 16px;
+    line-height: 1.2rem;
+    font-weight: 700;
+}
+
+.pagar:hover{
+    background-color: #8710D8;
+}
+
+.promocion {
+    margin-top: 1.25rem;
+    
+
+   
+}
+
+.cart-precio {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.cart-pago {
+    hr {
+        margin-top: 15px;
+        width: 20rem;
+    }
+}
+
+.most-sold {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+
+    .checked {
+        color: orange;
+    }
+}
+
+.valoraciones{
+    color: #6a6f73;
+    font-size: 12px;
+    align-self: center;
+}
+
+.cupon-div {
+    display: flex;
+    width: 20rem;
+    input {
+        height: 2.125rem;
+        width: 80%;
+        padding: .1875rem;
+        box-sizing: border-box;
+        outline: none;
+        border: 1px solid black;
+        border-right: none;
+    }
+
+    button {
+        height: 2.125rem;
+        border-radius: 0;
+        background-color: #A435F0;
+        border: 1px solid #A435F0;
+        box-sizing: border-box;
+        font-weight: 700; 
+        width: 20%;
+        }
+
+    
+    button:hover{
+        background-color: #8710D8;
+        border-color: #8710D8;
+    }
+
+   
+        
+    }
+
+
+.total {
+    color: gray;
+    font-weight: 600;
+}

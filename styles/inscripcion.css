@@ -1,23 +1,31 @@
 .main {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 1.25rem;
+    margin-bottom: 6.05rem;
+    align-self: center;
 }
 
+
 .course-registration {
-    margin: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 513px;
 }
 
 .field {
     display: flex;
-    gap: 20px;
-    padding-top: 20px;
+    gap: 1.25rem;
+    padding-top: 1.25rem;
 
     input {
-        padding: 5px;
-        width: 500px;
-        height: 30px;
-        border-radius: 5px;
+        padding: .3125rem;
+        width: 31.25rem;
+        height: 1.875rem;
+        border-radius: .3125rem;
         outline: none;
     }
 
@@ -30,7 +38,7 @@
 }
 
 .add-person {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     display: flex;
     align-items: center;
 
@@ -39,21 +47,21 @@
     }
 
     p {
-        margin-left: 10px;
+        margin-left: .625rem;
         cursor: pointer;
     }
 }
 
 .registration-fee {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     align-items: center;
 
     .fee-amount {
-        padding: 5px;
-        width: 40px;
-        height: 20px;
+        padding: .3125rem;
+        width: 2.5rem;
+        height: 1.25rem;
         color: white;
         background-color: #000;
     }
@@ -61,11 +69,11 @@
     .btn-confirm {
         cursor: pointer;
         color: white;
-        padding: 10px;
+        padding: .625rem;
         background-color: gray;
-        border-radius: 10px;
-        height: 40px;
-        width: 110px;
+        border-radius: .625rem;
+        height: 2.5rem;
+        width: 6.875rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -75,4 +83,6 @@
     .btn-confirm:hover {
         background-color: rgb(75, 75, 75);
     }
+
+    
 }
