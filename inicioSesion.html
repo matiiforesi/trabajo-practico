@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/sesion.css">
 </head>
 <body>
     <header class="header">
@@ -39,7 +40,19 @@
     </nav>
 
     <main>
-
+        <section class="form-registro">
+            <a href="./home.html" class="link-no-deco"><img src="./assets/logoColor.png" alt="logo"></a>            
+            <div class="form-contenedor">
+                <h2>Iniciar Sesión</h2>
+                <form id="registroFormulario">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="password" name="contraseña" placeholder="Contraseña" required>
+                    <button type="submit" class="boton-aceptar" onclick="location.href='./home.html'">Aceptar</button>
+                    <a href="./home.html"><button type="button" class="boton-cancelar" onclick="limpiarFormulario()">Cancelar</button></a>
+                    <a href="./recupero.html" class="mensaje">Olvidaste tu contraseña?</a>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer class="contenedor-footer">
@@ -153,6 +166,8 @@
                 </div>
             </div>
         </div>
+
+        <hr>
 
         <div class="listas-footer">
             <p>© 2024, todos los derechos reservados.
