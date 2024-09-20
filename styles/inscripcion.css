@@ -1,8 +1,10 @@
+
+
 .main {
     display: flex;
     flex-direction: column;
     padding: 1.25rem;
-    margin-bottom: 6.05rem;
+    margin-bottom: 6.0rem;
     align-self: center;
 }
 
