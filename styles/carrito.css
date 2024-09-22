@@ -7,7 +7,7 @@ height: 70%;
 display: flex;
 flex-direction: column;
 justify-content: center;
-height: 600px;
+height: 37.5rem;
 }
 
 .cesta-curso{
@@ -18,7 +18,7 @@ height: 600px;
 
     img {
         height: 4.25rem;
-        width: 120x;
+        width: 7.5rem;
     }
 }
 
@@ -56,16 +56,16 @@ height: 600px;
     display: flex;
     gap: 1.25rem;
     list-style: none;
-    font-size: 12px;
+    font-size: .75rem;
     color: #6A6F73;
 
     hr {
-        border: none; /* Elimina la línea por defecto */
-    height: 5.9px;
-    width: 5.9px;
+        border: none; 
+    height: .3688rem;
+    width: .3688rem;
     align-self: center;
-    border-radius: 50%; /* Hace que el elemento sea redondo */
-    background-color: black; /* Color del punto */
+    border-radius: 50%; 
+    background-color: black; 
     background-color: #6A6F73;
     }
 }
@@ -81,11 +81,16 @@ height: 600px;
 }
 
 .pagar {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 20rem;
     height: 3rem;
     border-radius: 0rem;
     background-color:#A435F0;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.2rem;
     font-weight: 700;
 }
@@ -96,20 +101,17 @@ height: 600px;
 
 .promocion {
     margin-top: 1.25rem;
-    
-
-   
 }
 
 .cart-precio {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: .375rem;
 }
 
 .cart-pago {
     hr {
-        margin-top: 15px;
+        margin-top: .9375rem;
         width: 20rem;
     }
 }
@@ -126,7 +128,7 @@ height: 600px;
 
 .valoraciones{
     color: #6a6f73;
-    font-size: 12px;
+    font-size: .75rem;
     align-self: center;
 }
 
@@ -139,7 +141,7 @@ height: 600px;
         padding: .1875rem;
         box-sizing: border-box;
         outline: none;
-        border: 1px solid black;
+        border: .0625rem solid black;
         border-right: none;
     }
 
@@ -147,7 +149,7 @@ height: 600px;
         height: 2.125rem;
         border-radius: 0;
         background-color: #A435F0;
-        border: 1px solid #A435F0;
+        border: .0625rem solid #A435F0;
         box-sizing: border-box;
         font-weight: 700; 
         width: 20%;

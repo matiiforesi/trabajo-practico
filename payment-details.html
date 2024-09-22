@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/navbar.css">
-        <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/footer.css">
-        <link rel="stylesheet" href="styles/carrito.css">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/header.css">
+        <link rel="stylesheet" href="./styles/navbar.css">
+        <link rel="stylesheet" href="./styles/footer.css">
+        <link rel="stylesheet" href="./styles/payment-details.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,65 +44,56 @@
                 <li><a href="./contacto.html" class="link-no-deco">Contacto</a></li>
             </ul>
         </nav>
+        
+
         <main class="main">
-           <div class="cesta-container">
-            <div class="cesta-desc">
-                <h1>Cesta</h1>
-                <h3>1 curso en la cesta</h3> 
-             </div>  
-            <div class="cesta-curso">
-                <div class="curso-desc">
-                    <div class="shopping-item-img">
-                    <img  src="assets/980450_7fc0_4.jpg" alt="curso">
-                   </div> 
-                   <div class="course-details">
-                    <a href="#">Desarrollo Web con HTML,CSS y JavaScript</a>
-                    <p class="author">Por Juan Pablo De la torre Valdez</p>
-                    <div class="most-sold">
-                        <span class="most-sold-p">Lo más vendido</span>
-                        <div class="stars">
-                            <span class="fa fa-star fa-1x checked"></span>
-                            <span class="fa fa-star fa-1x checked"></span>
-                            <span class="fa fa-star fa-1x checked"></span>
-                            <span class="fa fa-star fa-1x checked"></span>
-                            <span class="fa fa-star fa-1x checked"></span>
-                         </div>
-                         <p class="valoraciones">(55,067 valoraciones)</p>
-                    </div>
-                    <ul class="detalles-del-curso">
-                        <li>83 horas en total</li>
-                       <hr>
-                        <li>794 clases</li>
-                       <hr> 
-                        <li>Principiante</li>
-                    </ul>
-                   </div> 
-                </div>
-                <div class="cart-pago">
-                  <div class="cart-precio">
-                    <span class="total">Total:</span>
-                    <p class="cart-precio-p">12,99 US$</p>
-                    <P class="descuento">74,99 US$</P>
-                    <p class="descuento-porcentaje">83% de descuento</p>
+            <div class="payment-details">
+                <a class="go-back" href="carrito.html"><img class="go-back-img" src="assets/back.png" alt="VolverAtras"></a>
+                <div class="details">
+                <div class="info">
                     
-                    <a href="/payment-details.html" class="pagar">Pagar</a>
-                  </div> 
+                    <h1 class="details-title">Your payment details</h1>
+                    <label for="nombre-completo">Nombre completo</label>
+                    <input type="text" id="nombre-completo" required>
                     
-                <hr>
-                    <div class="promocion">
-                        <h3>Promociones</h3>
-                       <div class="cupon-div">
-                        <input class="cupon" placeholder="Ingrese su cupon">
-                        <button type="submit">Aplicar</button>
-                       </div> 
-                    </div>
-                
+                    <label for="card-number">Número de tarjeta</label>
+                   <div class="card-number-container">
+                    <img src="/assets/tarjeta.png" class="tarjeta">
+                    <input type="number" id="card-number" required>
+                   </div> 
+                    
                 </div>
-               
+                   
+                    
+                   
+                    <div class="expiration-date">
+                        <div class="lll"><label for="expiration-date">Fecha de expiración</label></div>
+                     <div class="row">
+                        <input type="number" id="expiration-date-mm" placeholder="MM" required>
+                        <input type="number" id="expiration-date-yy" placeholder="YY" required>
+                     </div>   
+                    </div>
+                    <div class="cvc-container">
+                        <label for="cvc">CVC</label>
+                        <input type="number" id="cvc" placeholder="123" required>
+                    </div>
+
+                <div class="save-card">
+                    <input type="checkbox">
+                    <span>Guardar la información de mi tarjeta para futuras compras</span>
+                </div>
+
+                <div class="pay-now">
+                    <button class="pay">pagar ahora</button>
+                </div>
+
+                </div>
             </div>
-           </div> 
-            
         </main>
+        
+
+
+
         <footer class="contenedor-footer">
             <div id="fila">
                 <div>
@@ -149,8 +140,7 @@
                                 </g>
                             </svg>
                         </a>
-                    </div>
-    
+                    </div>             
                     <div class="iconos twitter">
                         <a href="http://www.twitter.com" target="_blank">
                             <svg viewBox="0 -2 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"

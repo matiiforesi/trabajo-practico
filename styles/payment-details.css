@@ -1,0 +1,127 @@
+
+
+.payment-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 31.25rem;
+
+    .go-back {
+        align-self: self-start;
+      margin-top: 1.875rem;
+    margin-right: 7.5rem;
+    }
+    
+    .go-back-img {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .go-back:hover {
+        cursor: pointer;
+    }
+    
+
+    input {
+        border: none;
+        outline: none;
+        border-bottom: .125rem solid gray;
+        width: 100%;
+        padding: .3125rem;
+        box-sizing: border-box;
+    }
+
+
+
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    color: #969896;
+    
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+
+   
+}
+
+.card-number-container {
+   display: flex;
+  
+   .tarjeta {
+        height: 2rem;
+        width: 2rem;
+        border-bottom: .125rem solid gray; 
+    }
+    
+
+
+}
+
+.expiration-date {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+
+    .row {
+        display: flex;
+        gap: 3.125rem;
+    }
+
+}
+
+.cvc-container {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+
+    label {
+        margin-top: .5rem;
+    }
+}
+
+.save-card{
+    display: flex;
+    align-items: center;
+    gap: .3125rem;
+    color: #676767;
+    font-size: .75rem;
+    input {
+        width: .75rem;
+        height: .75rem;
+    }
+}
+
+.pay-now {
+    display: flex;
+    justify-content: center;
+    margin-top: .625rem;
+}
+
+.pay {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    border-radius: 0;
+    color: #fff;
+    background-color: #24CF5F;
+    height: 2.5rem;
+    width: 7rem;
+    transition: transform 0.3s ease;
+}
+
+.pay:hover {
+    transform: scale(1.10);
+    background-color: #24CF5F;
+}
+
+.details-title {
+    color: black;
+}
+
