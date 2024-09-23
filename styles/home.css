@@ -1,4 +1,4 @@
-/*------ Botones ------*/
+/*BOTONES*/
 .slider__navegation button {
     background-color: transparent;
 }
@@ -10,11 +10,11 @@
 }
 
 .course-card button:hover {
-    background-color: dimgrey;
+    background-color: #696969;
     color: #ffffff;
 }
 
-/*------- Slider -------*/
+/*SLIDER*/
 .slider__item,
 .course {
     position: relative;
@@ -39,12 +39,12 @@
     top: 232px;
 }
 
-/*- Pasos inscripción - */
+/*PASOS INSCRIPCIÓN*/
 .inscription-guide {
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
-    padding: 5px;
+    padding: 10px;
 }
 
 .inscription-steps {
@@ -67,17 +67,16 @@
     padding-left: 10px;
 }
 
-/*----- Destacados -----*/
+/*DESTACADOS*/
 .cursos-destacados h2 {
     font-size: 30px;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    padding: 5px;
-    margin-top: 20px;
+    margin-top: 32px;
 }
 
-/*------ Tarjetas ------*/
+/*TARJETAS*/
 .payment-methods {
     text-align: center;
     text-transform: uppercase;
@@ -93,7 +92,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 1em;
+    margin-bottom: 10px;
 }
 
 .payment-methods--item {

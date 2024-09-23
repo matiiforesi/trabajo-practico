@@ -1,13 +1,11 @@
-/*------- Header -------*/
 .header {
     height: 4em;
     box-sizing: border-box;
-    background-color: #000000;
+    background-color: #26272b;
     padding: 0.5em 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    ;
 }
 
 .header .home img {
@@ -33,11 +31,10 @@
 }
 
 .cart {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #26272b;
 }
 
 .button-der {
-    background-color: grey;
+    background-color: #808080;
     height: 3em;
 }

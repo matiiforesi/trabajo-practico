@@ -1,16 +1,14 @@
-
-.cesta-container{
-
-margin-left: 20%;
-margin-right: 20%;
-height: 70%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-height: 37.5rem;
+.cesta-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 37.5rem;
 }
 
-.cesta-curso{
+.cesta-curso {
     display: flex;
     justify-content: space-between;
     margin-top: 1.25rem;
@@ -25,16 +23,16 @@ height: 37.5rem;
 .curso-desc {
     display: flex;
     gap: 1.25rem;
-    
 }
 
-.course-details{
-   display: flex;
-   flex-direction: column;
-   gap: .3125rem;
-    a {
+.course-details {
+    display: flex;
+    flex-direction: column;
+    gap: .3125rem;
+
+    .name {
         text-decoration: none;
-        color: black;
+        color: #000000;
         font-size: 1.25rem;
         font-weight: 600;
     }
@@ -60,13 +58,13 @@ height: 37.5rem;
     color: #6A6F73;
 
     hr {
-        border: none; 
-    height: .3688rem;
-    width: .3688rem;
-    align-self: center;
-    border-radius: 50%; 
-    background-color: black; 
-    background-color: #6A6F73;
+        border: none;
+        height: .3688rem;
+        width: .3688rem;
+        align-self: center;
+        border-radius: 50%;
+        background-color: #6A6F73;
+        margin: 5px 0px;
     }
 }
 
@@ -82,20 +80,20 @@ height: 37.5rem;
 
 .pagar {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 20rem;
     height: 3rem;
     border-radius: 0rem;
-    background-color:#A435F0;
+    background-color: #A435F0;
     font-size: 1rem;
     line-height: 1.2rem;
     font-weight: 700;
 }
 
-.pagar:hover{
+.pagar:hover {
     background-color: #8710D8;
 }
 
@@ -122,11 +120,11 @@ height: 37.5rem;
     gap: .625rem;
 
     .checked {
-        color: orange;
+        color: #ffa500;
     }
 }
 
-.valoraciones{
+.valoraciones {
     color: #6a6f73;
     font-size: .75rem;
     align-self: center;
@@ -135,13 +133,14 @@ height: 37.5rem;
 .cupon-div {
     display: flex;
     width: 20rem;
+
     input {
         height: 2.125rem;
         width: 80%;
         padding: .1875rem;
         box-sizing: border-box;
         outline: none;
-        border: .0625rem solid black;
+        border: .0625rem solid #000000;
         border-right: none;
     }
 
@@ -151,22 +150,17 @@ height: 37.5rem;
         background-color: #A435F0;
         border: .0625rem solid #A435F0;
         box-sizing: border-box;
-        font-weight: 700; 
+        font-weight: 700;
         width: 20%;
-        }
+    }
 
-    
-    button:hover{
+    button:hover {
         background-color: #8710D8;
         border-color: #8710D8;
     }
-
-   
-        
-    }
-
+}
 
 .total {
-    color: gray;
+    color: #808080;
     font-weight: 600;
 }

@@ -1,10 +1,10 @@
-.nav-bar{
-    background-color: grey;
-    color: white;
+.nav-bar {
+    background-color: #808080;
+    color: #ffffff;
     padding: 0.25em;
 }
 
-.fila-nav{
+.fila-nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,6 @@
     font-weight: bold;
 }
 
-.fila-nav li{
+.fila-nav li {
     text-decoration: none;
-
 }

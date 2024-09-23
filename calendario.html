@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,9 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/calendario.css">
 </head>
+
 <body>
     <header class="header">
         <div class="home">
@@ -28,14 +31,16 @@
         </div>
 
         <div class="contenedor-botones-sesion">
-            <a href="./carrito.html"><button class="cart"><img src="./assets/cart.png" alt="carrito"><span>0</span></button></a>
+            <a href="./carrito.html"><button class="cart"><img src="./assets/cart.png"
+                        alt="carrito"><span>1</span></button></a>
             <a href="./inicioSesion.html"><button class="button-der">Iniciar sesión</button></a>
             <a href="./registro.html"><button class="button-der">Registrarse</button></a>
         </div>
-    </header>   
-    
+    </header>
+
     <nav class="nav-bar">
         <ul class="fila-nav">
+            <li><a href="./home.html" class="link-no-deco">Home</a></li>
             <li><a href="./calendario.html" class="link-no-deco">Calendario</a></li>
             <li><a href="./giftCard.html" class="link-no-deco">Gift Card</a></li>
             <li><a href="./contacto.html" class="link-no-deco">Contacto</a></li>
@@ -43,9 +48,109 @@
     </nav>
 
     <main>
+        <div class="calendar-header">
+            <img src="./assets/arrow-left-black_7482887.png" alt="Mes anterior" class="arrow-left">
+            <h1>Septiembre 2024</h1>
+            <img src="./assets/arrow-right-black_7482887.png" alt="Mes siguiente" class="arrow-right">
+        </div>
+    
+        <div class="calendar-container">
+            <div class="weekdays">
+                <div class="weekday">Domingo</div>
+                <div class="weekday">Lunes</div>
+                <div class="weekday">Martes</div>
+                <div class="weekday">Miércoles</div>
+                <div class="weekday">Jueves</div>
+                <div class="weekday">Viernes</div>
+                <div class="weekday">Sábado</div>
+            </div>
+    
+            <div class="calendar">
+                <div class="day"><h3>1</h3></div>
+                <div class="day"><h3>2</h3></div>
+                <div class="day">
+                    <h3>3</h3>
+                    <div class="course">
+                        <a href="./cursoPresencial.html">HTML & CSS</a>
+                    </div>
+                </div>
+                <div class="day"><h3>4</h3></div>
+                <div class="day"><h3>5</h3></div>
+                <div class="day"><h3>7</h3></div>
+                <div class="day">
+                    <h3>7</h3>
+                    <div class="course">
+                        <a href="./cursoVirtual.html">Diseño UI/UX</a>
+                    </div>
+                </div>
+
+                <div class="day"><h3>8</h3></div>
+                <div class="day"><h3>9</h3></div>
+                <div class="day">
+                    <h3>10</h3>
+                    <div class="course">
+                        <a href="./cursoPresencial.html">HTML & CSS</a>
+                    </div>
+                </div>
+                <div class="day"><h3>11</h3></div>
+                <div class="day"><h3>12</h3></div>
+                <div class="day"><h3>13</h3></div>
+                <div class="day">
+                    <h3>14</h3>
+                    <div class="course">
+                        <a href="./cursoVirtual.html">Diseño UI/UX</a>
+                    </div>
+                </div>
+
+                <div class="day"><h3>15</h3></div>
+                <div class="day"><h3>16</h3></div>
+                <div class="day">
+                    <h3>17</h3>
+                    <div class="course">
+                        <a href="./cursoPresencial.html">HTML & CSS</a>
+                    </div>
+                </div>
+                <div class="day"><h3>18</h3></div>
+                <div class="day"><h3>19</h3></div>
+                <div class="day"><h3>20</h3></div>
+                <div class="day">
+                    <h3>21</h3>
+                    <div class="course">
+                        <a href="./cursoVirtual.html">Diseño UI/UX</a>
+                    </div>
+                </div>
+
+                <div class="day"><h3>22</h3></div>
+                <div class="day"><h3>23</h3></div>
+                <div class="day">
+                    <h3>24</h3>
+                    <div class="course">
+                        <a href="./cursoPresencial.html">HTML & CSS</a>
+                    </div>
+                </div>
+                <div class="day"><h3>25</h3></div>
+                <div class="day"><h3>26</h3></div>
+                <div class="day"><h3>27</h3></div>
+                <div class="day">
+                    <h3>28</h3>
+                    <div class="course">
+                        <a href="./cursoVirtual.html">Diseño UI/UX</a>
+                    </div>
+                </div>
+
+                <div class="day"><h3>29</h3></div>
+                <div class="day"><h3>30</h3></div>
+                <div class="empty-day"></div>
+                <div class="empty-day"></div>
+                <div class="empty-day"></div>
+                <div class="empty-day"></div>
+                <div class="empty-day"></div>
+            </div>
+        </div>
 
     </main>
     
+
     <footer class="contenedor-footer">
         <div id="fila">
             <div>
@@ -168,4 +273,5 @@
 
     </footer>
 </body>
+
 </html>

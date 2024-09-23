@@ -1,8 +1,6 @@
-/*-----FOOTER-----*/
 .contenedor-footer {
     background-color: #26272b;
     color: #737373;
-    font-family: 'Helvetica Neue', sans-serif;
     font-weight: 300;
     letter-spacing: 0.5px;
     padding: 10px 5%;
@@ -20,7 +18,7 @@
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 3px;
-    color: white;
+    color: #ffffff;
     margin: 15px 0px;
 }
 
@@ -73,4 +71,8 @@
 
 .iconos.linkedin:hover {
     background-color: #007bb6;
+}
+
+hr {
+    margin-bottom: 10px;
 }

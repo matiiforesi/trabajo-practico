@@ -6,11 +6,10 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/payment-details.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/inscripcion.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datos del pago</title>
+    <title>Formulario de Inscripción</title>
 </head>
 
 <body>
@@ -49,42 +48,46 @@
     </nav>
 
     <main class="main">
-        <div class="payment-details">
-            <a class="go-back" href="carrito.html"><img class="go-back-img" src="assets/back.png" alt="VolverAtras"></a>
-            <div class="details">
-                <div class="info">
-                    <h1 class="details-title">Sus datos de pago</h1>
-                    <label for="nombre-completo">Nombre del titular</label>
-                    <input type="text" id="nombre-completo" required>
-                    <label for="card-number">Número de tarjeta</label>
-                    <div class="card-number-container">
-                        <img src="./assets/tarjeta.png" class="tarjeta">
-                        <input type="number" id="card-number" placeholder="XXXX - XXXX - XXXX - XXXX" required>
-                    </div>
+        <div class="course-registration">
+            <h2>Nombre del curso</h2>
+            <h3>Inscripción</h3>
+            <div class="fields">
+                <div class="field">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                    <input type="number" placeholder="DNI">
+                    <button type="submit">
+                        <img src="./assets/circulo-negativo.png" alt="delete">
+                    </button>
                 </div>
 
-                <div class="expiration-date">
-                    <div class="lll"><label for="expiration-date">Fecha de expiración</label></div>
-                    <div class="row">
-                        <input type="number" id="expiration-date-mm" placeholder="MM" required>
-                        <input type="number" id="expiration-date-yy" placeholder="YY" required>
-                    </div>
+                <div class="field">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                    <input type="number" placeholder="DNI">
+                    <button type="submit">
+                        <img src="./assets/circulo-negativo.png" alt="delete">
+                    </button>
                 </div>
 
-                <div class="cvc-container">
-                    <label for="cvc">CVC</label>
-                    <input type="number" id="cvc" placeholder="123" required>
+                <div class="field">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Apellido">
+                    <input type="number" placeholder="DNI">
+                    <button type="submit">
+                        <img src="./assets/circulo-negativo.png" alt="delete">
+                    </button>
                 </div>
+            </div>
 
-                <div class="save-card">
-                    <input type="checkbox">
-                    <span>Guardar la información de mi tarjeta para futuras compras</span>
-                </div>
+            <div class="add-person">
+                <img src="./assets/agregar.png" alt="add">
+                <p>Agregar personas</p>
+            </div>
 
-                <div class="pay-now">
-                    <button class="pay">Pagar ahora</button>
-                </div>
-
+            <div class="registration-fee">
+                <div class="fee-amount">$0.00</div>
+                <button class="btn-confirm">INSCRIBIRSE<button>
             </div>
         </div>
     </main>
