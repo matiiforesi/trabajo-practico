@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/contacto.css">
-    <link rel="stylesheet" href="./styles/curso.css>">
 </head>
 
 <body>
@@ -58,12 +57,12 @@
                     <input class="contact-form__input" id="email" type="email" name="Correo Electronico"
                         placeholder="Ingrese su correo electronico" required>
                     <input class="contact-form__input" id="tel-number" type="number" name="Número telefonico"
-                        placeholder="Ingrese su número telefonico (OPCIONAL)">
+                        placeholder="Ingrese su número telefonico (OPCIONAL)" required>
                     <textarea id="comentario" class="contact-form__textarea" name="comentario"
-                        placeholder="¿Cual es su consulta?" required></textarea>
+                        placeholder="¿Cual es su consulta?" ></textarea>
                     <div class="contenedor-botones-contacto">
                         <button class="contact-form__submit" type="submit">ENVIAR</button>
-                        <a href="./home.html"><button class="contact-form__submit">VOLVER</button></a>
+                        <a href="./home.html"><button type="button" class="contact-form__submit" onclick="limpiarFormulario()">VOLVER</button></a>
                     </div>
                 </div>
 
