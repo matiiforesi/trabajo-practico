@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/sesion.css">
 </head>
+
 <body>
     <header class="header">
         <div class="home">
@@ -29,7 +31,8 @@
         </div>
 
         <div class="contenedor-botones-sesion">
-            <a href="./carrito.html"><button class="cart"><img src="./assets/cart.png" alt="carrito"><span>0</span></button></a>
+            <a href="./carrito.html"><button class="cart"><img src="./assets/cart.png"
+                        alt="carrito"><span>1</span></button></a>
             <a href="./inicioSesion.html"><button class="button-der">Iniciar sesión</button></a>
             <a href="./registro.html"><button class="button-der">Registrarse</button></a>
         </div>
@@ -37,6 +40,7 @@
 
     <nav class="nav-bar">
         <ul class="fila-nav">
+            <li><a href="./home.html" class="link-no-deco">Home</a></li>
             <li><a href="./calendario.html" class="link-no-deco">Calendario</a></li>
             <li><a href="./giftCard.html" class="link-no-deco">Gift Card</a></li>
             <li><a href="./contacto.html" class="link-no-deco">Contacto</a></li>
@@ -45,15 +49,16 @@
 
     <main>
         <section class="form-registro">
-            <a href="./home.html" class="link-no-deco"><img src="./assets/logoColor.png" alt="logo"></a>            
+            <a href="./home.html" class="link-no-deco"><img src="./assets/logoColor.png" alt="logo"></a>
             <div class="form-contenedor">
                 <h2>Iniciar Sesión</h2>
                 <form id="registroFormulario">
                     <input type="email" name="email" placeholder="E-mail" required>
                     <input type="password" name="contraseña" placeholder="Contraseña" required>
                     <button type="submit" class="boton-aceptar" onclick="location.href='./home.html'">Aceptar</button>
-                    <a href="./home.html"><button type="button" class="boton-cancelar" onclick="limpiarFormulario()">Cancelar</button></a>
-                    <a href="./recupero.html" class="mensaje">Olvidaste tu contraseña?</a>
+                    <a href="./home.html"><button type="button" class="boton-cancelar"
+                            onclick="limpiarFormulario()">Cancelar</button></a>
+                    <a href="./recupero.html" class="mensaje">¿Olvidaste tu contraseña?</a>
                 </form>
             </div>
         </section>
@@ -181,4 +186,5 @@
 
     </footer>
 </body>
+
 </html>
