@@ -118,3 +118,20 @@
 
 
 }
+
+@media (max-width: 1024px){
+
+    .inscription-steps {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 0 10em;
+    }
+
+    .inscription-item {
+        margin: 1em;
+    }
+
+}

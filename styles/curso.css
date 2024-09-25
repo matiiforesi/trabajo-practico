@@ -237,5 +237,28 @@ details[open]>summary::after {
         padding: 2em;
         gap:2em;
     }
+}
+
+@media (max-width: 1024px){
+        .contenedor-publicidad-cursos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2em;
+            gap:2em;
+            width: 70%;
+        }
+
+        .cursos-destacados{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
 }

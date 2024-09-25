@@ -175,3 +175,20 @@
         }
     }
 }
+
+@media (max-width: 1024px){
+    .cesta-curso {   
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart-pago {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        hr {
+            margin-top: .9375rem;
+            width: 20rem;
+        }
+    }
+}
