@@ -116,7 +116,6 @@
         margin: 1em;
     }
 
-
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
@@ -134,4 +133,11 @@
         margin: 1em;
     }
 
+    .slider{
+        width:100%
+    }
+
+    .payments-grid img {
+        margin: 0 1em;
+    }
 }
