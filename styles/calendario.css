@@ -28,6 +28,7 @@
     background-color: #f3f3f3;
     padding: 20px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .day {
@@ -43,10 +44,9 @@
     background-color: #cccccc;
 }
 
-.course {
+.course-1, .course-2 {
     margin-top: 5px;
     font-size: 0.8em;
-    background-color: #5cb85c;
     color: #ffffff;
     border-radius: 5px;
     padding: 3px;
@@ -57,7 +57,15 @@
     text-align: center;
 }
 
-.course a {
+.course-1 {
+    background-color: #008b8b;
+}
+
+.course-2 {
+    background-color: #8a2be2;
+}
+
+.course-1 a, .course-2 a {
     color: white;
     text-decoration: none;
 }
