@@ -97,3 +97,9 @@
         }
     }
 }
+
+@media (max-width: 768px){
+    .main {
+        padding: 5em 5em;
+    }
+}

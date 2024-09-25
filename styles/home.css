@@ -60,6 +60,7 @@
     border: 1px solid #000000;
     border-radius: 50px;
     padding: 20px;
+    width: 340px;
 }
 
 .inscription-item span {
@@ -98,4 +99,22 @@
 .payment-methods--item {
     width: 200px;
     height: 200px;
+}
+
+@media (max-width: 768px){
+
+    .inscription-steps {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 0 10em;
+    }
+
+    .inscription-item {
+        margin: 1em;
+    }
+
+
 }

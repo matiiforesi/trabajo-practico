@@ -6,11 +6,6 @@ main {
     background-color: #f0f0f0;
 }
 
-section {
-    display: flex;
-    gap: 50px;
-}
-
 .contenedor-giftcard {
     display: flex;
     gap: 30px;
@@ -22,7 +17,7 @@ section {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px #0000001a;
-    width: 350px;
+    width: 45%;
 }
 
 .giftcard h2 {
@@ -32,13 +27,12 @@ section {
 }
 
 .vistaPrevia {
-    width: 100%;
-    height: 200px;
+    height: 300px;
     border: 2px solid #dddddd;
     border-radius: 10px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    text-align: center;
     position: relative;
 }
 
@@ -60,15 +54,16 @@ section {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px #0000001a;
-    width: 400px;
+    width: 55%;
 }
 
 .detalle-giftcard h1 {
     font-size: 22px;
+    margin-bottom: 1em;
 }
 
 .detalle-giftcard h4 {
-    margin-top: 5px;
+    margin-top: 1em;
 }
 
 .detalle-giftcard input[type="text"],
@@ -81,6 +76,7 @@ section {
 
 .detalle-giftcard input[type="radio"] {
     margin: 10px 5px;
+    cursor: pointer;
 }
 
 .detalle-giftcard input[type="radio"]:checked+label {
@@ -102,4 +98,17 @@ section {
 
 .submit:hover {
     background-color: #2980b9;
+}
+
+@media (max-width: 768px){
+    main {
+        padding: 50px;
+     }
+
+     .giftcard {
+        width: 40%;
+    }
+     .detalle-giftcard {
+        width: 60%;
+    }
 }

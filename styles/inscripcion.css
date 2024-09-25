@@ -64,3 +64,10 @@ margin-bottom: 0.5em;
     }
   
 }
+
+@media (max-width: 768px){
+    .course-registration {
+        padding: 5em 5em;
+    }
+    
+}

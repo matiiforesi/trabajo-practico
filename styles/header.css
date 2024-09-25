@@ -38,3 +38,12 @@
     background-color: #808080;
     height: 3em;
 }
+
+@media (max-width: 768px){
+
+    .header .home img {
+        max-height: 3em;
+        margin: 0;
+    }
+
+}

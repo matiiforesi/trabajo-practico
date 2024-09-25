@@ -42,9 +42,6 @@
 /*COLUMNA DE ICONOS*/
 .contenedor-redes {
     display: flex;
-    justify-content: center;
-    padding: 0px;
-    list-style-type: none;
 }
 
 .iconos {
@@ -75,4 +72,14 @@
 
 hr {
     margin-bottom: 10px;
+}
+
+@media (max-width: 768px){
+    #fila h5 {
+        font-size: 14px;
+    }
+
+    .listas-footer li,p {
+        font-size: 14px;
+    }
 }

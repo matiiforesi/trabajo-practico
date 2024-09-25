@@ -86,3 +86,9 @@
     background-color: #ddd;
     border-radius: 5px;
 }
+
+@media (max-width: 768px){
+    .day h3{
+        margin-bottom: 0.75em;
+    }
+}
