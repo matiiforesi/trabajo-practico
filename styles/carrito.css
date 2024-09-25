@@ -72,6 +72,10 @@
     color: #6a6f73;
 }
 
+.stars {
+    min-width: 6.25rem;
+}
+
 .pagar {
     text-decoration: none;
     color: #ffffff;
