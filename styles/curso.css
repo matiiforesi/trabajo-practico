@@ -173,6 +173,7 @@ details[open]>summary::after {
     display: flex;
     justify-content: space-around;
     padding: 2em;
+    gap: 1em;
 }
 
 .publicidades {
@@ -229,36 +230,173 @@ details[open]>summary::after {
     z-index: 10;
 }
 
-@media (max-width: 768px){
+/*DESDE px HASTA 768px INCUIDO*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contenedor-publicidad-cursos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2em;
+        width: 70%;
+    }
+
+    .detalle-de-curso-der h4 {
+        font-size: 14px;
+    }
+
+    .cursos-destacados {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/*DESDE 481px HASTA 768px INCUIDO*/
+@media (min-width: 480px) and (max-width: 768px) {
     .contenedor-publicidad-cursos {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         padding: 2em;
-        gap:2em;
-     }
-}
+        gap: 2em;
+        width: 70%;
+    }
 
-@media (min-width: 768px) and (max-width: 1024px){
-        .contenedor-publicidad-cursos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 2em;
-            gap:2em;
-            width: 70%;
-        }
+    .detalle-de-curso-der h4 {
+        font-size: 13px;
+    }
 
-        .cursos-destacados{
+    .cursos-destacados {
         display: flex;
         flex-direction: column;
         align-items: center;
-        }
+    }
 
-        main{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .contenedor-docente_detalle p {
+        font-size: 14px;
+    }
+
+    .contenedor-docente{
+        padding: 1em 3.5em;
+    }
+
+    .contenedor-detalle {
+        padding-left: 2.5em;
+    }
+
+    .contenedor-detalle li {
+        margin-left: 1em;
+    }
+
+    .lista-contenidos {
+        margin-right: 1em;
+    }
+
+    .formato-input {
+        margin-right: 0;
+    }
+
+    .contenido-clase {
+        padding: 4% 5%;
+    }
+
+    .contenedor-curso {
+        gap: 3.5%;
+        padding: 4% 7%;
+    }
+    
+    .imagen-curso img {
+        height: 8em;
+        width: 8em;
+    }
+
+    .detalle-curso__descripcion {
+        font-size: 12.5px;
+        margin-left: 1.75em;
+    }
+}
+
+/*HASTA 480px INCUIDOS*/
+@media (max-width: 480px) {
+
+    .contenedor-publicidad-cursos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2em;
+        width: 70%;
+    }
+
+    .detalle-de-curso-der h4 {
+        font-size: 12px;
+    }
+
+    .cursos-destacados {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-docente_detalle p {
+        font-size: 12px;
+    }
+
+    .contenedor-docente{
+        padding: 1em 2em;
+    }
+
+    .contenedor-detalle {
+        padding-left: 1em;
+    }
+
+    .contenedor-detalle li {
+        margin-left: 0.5em;
+    }
+    
+    .lista-contenidos {
+        margin-right: 1em;
+    }
+
+    .formato-input {
+        margin-right: 0;
+    }
+
+    .contenido-clase {
+        padding: 4% 5%;
+    }
+
+    .contenedor-curso {
+        gap: 2%;
+        padding: 4% 5%;
+    }
+    
+    .imagen-curso img {
+        height: 6em;
+        width: 6em;
+    }
+    
+    .detalle-curso__descripcion {
+        font-size: 11px;
+        margin-left: 1.5em;
+    }
+    
 }
