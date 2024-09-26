@@ -16,3 +16,19 @@
 .fila-nav li {
     text-decoration: none;
 }
+
+
+/*DESDE 481px HASTA 768px INCUIDO*/
+@media (min-width: 480px) and (max-width: 768px) {
+    .fila-nav {
+        gap: 3em;
+    }
+}
+
+/*HASTA 480px INCUIDO*/
+@media (max-width: 480px) {
+    .fila-nav {
+        gap: 2em;
+    }
+
+}

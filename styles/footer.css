@@ -74,12 +74,31 @@ hr {
     margin-bottom: 10px;
 }
 
-@media (max-width: 768px){
+/*DESDE 601px HASTA 768px INCUIDO*/
+@media (min-width: 600px) and (max-width: 768px) {
     #fila h5 {
         font-size: 14px;
     }
 
-    .listas-footer li,p {
+    .listas-footer li, p {
         font-size: 14px;
+    }
+}
+
+/*HASTA 600px INCUIDO*/
+@media (max-width: 600px) {
+    .contenedor-redes {
+        display: flex;
+        flex-wrap: wrap;
+        width: 25%;
+
+    }
+
+    .contenedor-footer {
+        font-size: 12px;
+    }
+
+    .iconos {
+        margin: 10px 5px;
     }
 }
