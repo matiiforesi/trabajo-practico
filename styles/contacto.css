@@ -15,7 +15,7 @@
     gap: 1.25rem;
     width: 43%;
     
-    .contact-form__input {
+    .contact-form__input, textarea {
         padding: .3125rem;
         height: 1.875rem;
         border-radius: .5rem;
@@ -32,7 +32,6 @@
 
     .contact-form__textarea {
         resize: none;
-
         height: 12.5rem;
         outline: none;
         padding: .3125rem;

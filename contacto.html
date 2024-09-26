@@ -50,8 +50,8 @@
     <main class="main">
         <section>
             <h2>FORMULARIO DE CONTACTO</h2>
-            <form class="contact-form" mehtod="get" action="#">
-                <div class="contact-form__items">
+            <div class="contact-form" >
+                <form class="contact-form__items" mehtod="get" action="#">
                     <input class="contact-form__input" id="nombre_y_apellido" type="text" name="nombre y apellido"
                         placeholder="Ingrese su nombre y apellido" required>
                     <input class="contact-form__input" id="email" type="email" name="Correo Electronico"
@@ -64,7 +64,7 @@
                         <button class="contact-form__submit" type="submit">ENVIAR</button>
                         <a href="./home.html"><button type="button" class="contact-form__submit" onclick="limpiarFormulario()">VOLVER</button></a>
                     </div>
-                </div>
+                </form>
 
                 <div class="contact-contenedor-info">
                     <img class="logo-empresa" src="./assets/logoColor.png">
@@ -82,10 +82,10 @@
                         <p>Lunes a Viernes 8 a 18 hs</h1>
                     </div>
                 </div>
-            </form>
+            </div>
         </section>
 
-        <section class="location-section">
+        <aside class="location-section">
             <h2>UBICACIÓN</h2>
             <div class="location-section__map">
                 <iframe
@@ -93,8 +93,7 @@
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </section>
-
+        </aside>
     </main>
 
     <footer class="contenedor-footer">
