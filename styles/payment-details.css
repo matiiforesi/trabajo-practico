@@ -6,8 +6,8 @@
 
     .go-back {
         align-self: self-start;
-      margin-top: 1.875rem;
-    margin-right: 7.5rem;
+        margin-top: 1.875rem;
+        margin-right: 7.5rem;
     }
     
     .go-back-img {
@@ -117,4 +117,12 @@
 
 .details-title {
     color: black;
+}
+
+/*HASTA 480px INCUIDOS*/
+@media (max-width: 600px){
+    .payment-details .go-back {
+        margin-top: 1.875rem;
+        margin-right: 1.5rem;
+    }
 }

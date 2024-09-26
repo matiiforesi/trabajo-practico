@@ -51,7 +51,7 @@
     <main class="main">
         <section class="payment-details">
             <a class="go-back" href="carrito.html"><img class="go-back-img" src="assets/back.png" alt="VolverAtras"></a>
-            <div class="details">
+            <form method="get" action="#" class="details">
                 <div class="info">
                     <h1 class="details-title">Sus datos de pago</h1>
                     <label for="nombre-completo">Nombre del titular</label>
@@ -64,7 +64,9 @@
                 </div>
 
                 <div class="expiration-date">
-                    <div class="lll"><label for="expiration-date">Fecha de expiración</label></div>
+                    <div class="lll">
+                        <label for="expiration-date">Fecha de expiración</label>
+                    </div>
                     <div class="row">
                         <input type="number" id="expiration-date-mm" placeholder="MM" required>
                         <input type="number" id="expiration-date-yy" placeholder="YY" required>
@@ -82,10 +84,11 @@
                 </div>
 
                 <div class="pay-now">
-                    <button class="pay">Pagar ahora</button>
+                <!--CHEQUEAR QUE EL BOTON SUBMIT FUNCIONE-->
+                    <button type="submit" class="pay">Pagar ahora</button>
                 </div>
 
-            </div>
+            </form>
         </section>
     </main>
 

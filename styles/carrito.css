@@ -1,5 +1,5 @@
 .cesta-container {
-    padding: 4em 10em;
+    padding: 4em 5em;
 }
 
 .cesta-curso {
@@ -96,7 +96,7 @@
 }
 
 .promocion {
-    margin-top: 1.25rem;
+    margin-top: 0.25em;
 }
 
 .cart-precio {
@@ -163,7 +163,8 @@
     font-weight: 600;
 }
 
-@media (max-width: 768px){
+/*DESDE px HASTA 768px INCUIDO*/
+@media (min-width: 768px) and (max-width: 1024px){
     .cesta-curso {   
         display: flex;
         flex-direction: column;
@@ -180,7 +181,8 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+/*DESDE 601px HASTA 768px INCUIDO*/
+@media (min-width: 650px) and (max-width: 768px){
     .cesta-curso {   
         display: flex;
         flex-direction: column;
@@ -194,5 +196,27 @@
             margin-top: .9375rem;
             width: 20rem;
         }
+    }
+}
+
+/*HASTA 600px INCUIDOS*/
+@media (max-width: 650px){
+    .cesta-curso {   
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart-pago {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        hr {
+            margin-top: .9375rem;
+            width: 20rem;
+        }
+    }
+
+    .cesta-container {
+        padding: 2em 1em;
     }
 }

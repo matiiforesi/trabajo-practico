@@ -65,9 +65,18 @@ margin-bottom: 0.5em;
   
 }
 
-@media (max-width: 768px){
-    .course-registration {
-        padding: 5em 5em;
-    }
-    
+/*DESDE px HASTA 768px INCUIDO*/
+@media (min-width: 768px) and (max-width: 1024px){
+   
 }
+
+/*DESDE 481px HASTA 768px INCUIDO*/
+@media (min-width: 480px) and (max-width: 768px){
+
+}
+
+/*HASTA 480px INCUIDOS*/
+@media (max-width: 480px){
+   
+}
+
