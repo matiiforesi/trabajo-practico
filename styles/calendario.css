@@ -32,6 +32,7 @@
 }
 
 .day {
+    font-weight: bold;
     background-color: #ffffff;
     border: 1px solid #cccccc;
     padding: 10px;
@@ -44,7 +45,8 @@
     background-color: #cccccc;
 }
 
-.course-1, .course-2 {
+.course-1,
+.course-2 {
     margin-top: 5px;
     font-size: 0.8em;
     color: #ffffff;
@@ -61,12 +63,21 @@
     background-color: #008b8b;
 }
 
+.course-1:hover {
+    cursor: pointer;
+}
+
 .course-2 {
     background-color: #8a2be2;
 }
 
-.course-1 a, .course-2 a {
-    color: white;
+.course-2:hover {
+    cursor: pointer;
+}
+
+.course-1 a,
+.course-2 a {
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -83,23 +94,24 @@
     text-align: center;
     font-weight: bold;
     padding: 10px 0;
-    background-color: #ddd;
+    background-color: #dddddd;
     border-radius: 5px;
 }
 
 
 /*DESDE px HASTA 768px INCUIDO*/
-@media (min-width: 768px) and (max-width: 1024px){
-    .day h3{
+@media (min-width: 768px) and (max-width: 1024px) {
+    .day h3 {
         margin-bottom: 0.5em;
     }
 }
+
 /*DESDE 481px HASTA 768px INCUIDO*/
-@media (min-width: 480px) and (max-width: 768px){
-/*modificar el grid*/
+@media (min-width: 480px) and (max-width: 768px) {
+    /*modificar el grid*/
 }
 
 /*HASTA 480px INCUIDOS*/
-@media (max-width: 480px){
-   /*modificar el grid*/
+@media (max-width: 480px) {
+    /*modificar el grid*/
 }

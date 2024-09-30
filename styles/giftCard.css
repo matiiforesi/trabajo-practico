@@ -33,7 +33,7 @@ h1 {
     border-radius: 16px;
     display: flex;
     align-items: center;
-   justify-content: center;
+    justify-content: center;
     position: relative;
 }
 
@@ -190,7 +190,7 @@ h1 {
 
 
 /*DESDE px HASTA 768px INCUIDO*/
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1024px) {
     .giftcard {
         width: 40%;
     }
@@ -201,11 +201,12 @@ h1 {
 }
 
 /*HASTA 480px INCUIDOS*/
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .contenedor-giftcard {
         display: flex;
         flex-direction: column;
     }
+
     .giftcard {
         width: 90%;
     }

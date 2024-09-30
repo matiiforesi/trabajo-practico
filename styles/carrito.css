@@ -36,8 +36,8 @@
     width: 8.125rem;
     height: 1rem;
     padding: .3125rem;
-    background-color: #ECEB98;
-    color: #3D3C13;
+    background-color: #eceb98;
+    color: #3d3c13;
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -49,7 +49,7 @@
     gap: 1.25rem;
     list-style: none;
     font-size: .75rem;
-    color: #6A6F73;
+    color: #6a6f73;
 
     hr {
         border: none;
@@ -57,7 +57,7 @@
         width: .3688rem;
         align-self: center;
         border-radius: 50%;
-        background-color: #6A6F73;
+        background-color: #6a6f73;
         margin: 5px 0px;
     }
 }
@@ -85,14 +85,14 @@
     width: 20rem;
     height: 3rem;
     border-radius: 0rem;
-    background-color: #A435F0;
+    background-color: #a435f0;
     font-size: 1rem;
     line-height: 1.2rem;
     font-weight: 700;
 }
 
 .pagar:hover {
-    background-color: #8710D8;
+    background-color: #8710d8;
 }
 
 .promocion {
@@ -145,16 +145,14 @@
     button {
         height: 2.125rem;
         border-radius: 0;
-        background-color: #A435F0;
-        border: .0625rem solid #A435F0;
+        background-color: #a435f0;
         box-sizing: border-box;
         font-weight: 700;
         width: 20%;
     }
 
     button:hover {
-        background-color: #8710D8;
-        border-color: #8710D8;
+        background-color: #8710d8;
     }
 }
 
@@ -164,8 +162,8 @@
 }
 
 /*DESDE px HASTA 768px INCUIDO*/
-@media (min-width: 768px) and (max-width: 1024px){
-    .cesta-curso {   
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cesta-curso {
         display: flex;
         flex-direction: column;
     }
@@ -174,6 +172,7 @@
         display: flex;
         flex-direction: column;
         align-items: end;
+
         hr {
             margin-top: .9375rem;
             width: 20rem;
@@ -182,8 +181,8 @@
 }
 
 /*DESDE 601px HASTA 768px INCUIDO*/
-@media (min-width: 650px) and (max-width: 768px){
-    .cesta-curso {   
+@media (min-width: 650px) and (max-width: 768px) {
+    .cesta-curso {
         display: flex;
         flex-direction: column;
     }
@@ -192,6 +191,7 @@
         display: flex;
         flex-direction: column;
         align-items: end;
+
         hr {
             margin-top: .9375rem;
             width: 20rem;
@@ -200,8 +200,8 @@
 }
 
 /*HASTA 600px INCUIDOS*/
-@media (max-width: 650px){
-    .cesta-curso {   
+@media (max-width: 650px) {
+    .cesta-curso {
         display: flex;
         flex-direction: column;
     }
@@ -210,6 +210,7 @@
         display: flex;
         flex-direction: column;
         align-items: end;
+
         hr {
             margin-top: .9375rem;
             width: 20rem;

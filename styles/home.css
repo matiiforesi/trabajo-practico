@@ -15,7 +15,7 @@
 }
 
 /*SLIDER*/
-.slider{
+.slider {
     width: 100%;
 }
 
@@ -107,8 +107,8 @@
 }
 
 /*DESDE px HASTA 768px INCUIDO*/
-@media (min-width: 768px) and (max-width: 1024px){
-   
+@media (min-width: 768px) and (max-width: 1024px) {
+
     .course-info {
         left: 100px;
     }
@@ -128,53 +128,19 @@
 }
 
 /*DESDE 481px HASTA 768px INCUIDO*/
-@media (min-width: 480px) and (max-width: 768px){
+@media (min-width: 480px) and (max-width: 768px) {
     .course {
         max-height: 350px;
     }
+
     .course-info h1 {
         font-size: 35px;
     }
-   
-    .course-info {
-        left: 60px;
-    }
-
-    .inscription-steps {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-        margin: 0 10em;
-    }
-
-    .inscription-item {
-        margin: 1em;
-    }
-
-    .payments-grid {
-        display: flex;
-        flex-direction: column;
-         justify-content: center;
-    }
-}
-
-/*HASTA 480px INCUIDOS*/
-@media (max-width: 480px){
-
-    .course {
-        height: 250px;
-    }
 
     .course-info {
         left: 60px;
     }
 
-    .course-info h1 {
-        font-size: 30px;
-    }
-    
     .inscription-steps {
         list-style: none;
         display: flex;
@@ -193,6 +159,39 @@
         flex-direction: column;
         justify-content: center;
     }
-    
 }
 
+/*HASTA 480px INCUIDOS*/
+@media (max-width: 480px) {
+
+    .course {
+        height: 250px;
+    }
+
+    .course-info {
+        left: 60px;
+    }
+
+    .course-info h1 {
+        font-size: 30px;
+    }
+
+    .inscription-steps {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 0 10em;
+    }
+
+    .inscription-item {
+        margin: 1em;
+    }
+
+    .payments-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -14,11 +14,11 @@
     box-shadow: 0 0 10px #0000001a;
 }
 
-#registroFormulario{
+#registroFormulario {
     margin-right: 3%;
 }
 
-.mensaje{
+.mensaje {
     font-size: small;
     padding-right: 5px;
 }
@@ -49,6 +49,6 @@ input {
     color: white;
 }
 
-.frases{
+.frases {
     margin-top: 1em;
 }

@@ -52,19 +52,18 @@
             <a href="./home.html" class="link-no-deco"><img src="./assets/logoColor.png" alt="logo"></a>
             <div class="form-contenedor">
                 <h2>Registro de Usuario</h2>
-                <form id="registroFormulario">
+                <form id="registroFormulario" method="get" action="./home.html">
                     <input type="text" name="nombre" placeholder="Nombre" required>
                     <input type="text" name="apellido" placeholder="Apellido" required>
                     <input type="email" name="email" placeholder="E-mail" required>
                     <input type="password" name="contraseña" placeholder="Contraseña" required>
                     <input type="password" name="validar_contraseña" placeholder="Validar Contraseña" required>
-                    <button type="submit" class="boton-aceptar" onclick="location.href='./home.html'">Aceptar</button>
-                    <a href="./home.html"><button type="button" class="boton-cancelar"
-                            onclick="limpiarFormulario()">Cancelar</button></a>
+                    <button type="submit" class="boton-aceptar">Aceptar</button>
+                    <a href="./home.html"><button type="button" class="boton-cancelar">Cancelar</button></a>
                     <div class="frases">
-                            <a href="./inicioSesion.html" class="mensaje">¿Ya tenes una cuenta? Iniciá sesión</a>
-                        </div>
-                        </form>
+                        <a href="./inicioSesion.html" class="mensaje">¿Ya tienes una cuenta? Inicia sesión</a>
+                    </div>
+                </form>
             </div>
         </section>
     </main>

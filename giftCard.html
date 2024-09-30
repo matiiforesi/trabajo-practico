@@ -56,112 +56,114 @@
                     <span class="valor">$0.00</span>
                 </div>
             </div>
-<!--ESTO DEBERIA SER UN FORM-->
+
             <div class="detalle-giftcard">
                 <h1>Personalización de Gift Card</h1>
-                <input type="text" placeholder="Nombre del destinatario">
+                <form method="get" action="./payment-details.html">
+                    <input type="text" name="nombre_destinatario" placeholder="Nombre del destinatario" required>
 
-                <h4>Color del fondo</h4>
-                <div class="opciones-color">
-                    <div>
-                        <label for="color-gris" class="color-icon color-gris"></label>
-                        <input type="radio" name="color" value="gray" id="color-gris" checked>
+                    <h4>Color del fondo</h4>
+                    <div class="opciones-color">
+                        <div>
+                            <label for="color-gris" class="color-icon color-gris"></label>
+                            <input type="radio" name="color" value="gray" id="color-gris" checked>
+                        </div>
+                        <div>
+                            <label for="color-rosa" class="color-icon color-rosa"></label>
+                            <input type="radio" name="color" value="pink" id="color-rosa">
+                        </div>
+                        <div>
+                            <label for="color-azul" class="color-icon color-azul"></label>
+                            <input type="radio" name="color" value="blue" id="color-azul">
+                        </div>
+                        <div>
+                            <label for="color-verde" class="color-icon color-verde"></label>
+                            <input type="radio" name="color" value="green" id="color-verde">
+                        </div>
+                        <div>
+                            <label for="color-naranja" class="color-icon color-naranja"></label>
+                            <input type="radio" name="color" value="orange" id="color-naranja">
+                        </div>
                     </div>
-                    <div>
-                        <label for="color-rosa" class="color-icon color-rosa"></label>
-                        <input type="radio" name="color" value="pink" id="color-rosa">
-                    </div>
-                    <div>
-                        <label for="color-azul" class="color-icon color-azul"></label>
-                        <input type="radio" name="color" value="blue" id="color-azul">
-                    </div>
-                    <div>
-                        <label for="color-verde" class="color-icon color-verde"></label>
-                        <input type="radio" name="color" value="green" id="color-verde">
-                    </div>
-                    <div>
-                        <label for="color-naranja" class="color-icon color-naranja"></label>
-                        <input type="radio" name="color" value="orange" id="color-naranja">
-                    </div>
-                </div>
 
-                <h4>Tamaño De Fuente</h4>
-                <input type="radio" name="fontSize" value="20px" id="font-size-20" checked> 20px
-                <input type="radio" name="fontSize" value="28px" id="font-size-28"> 28px
-                <input type="radio" name="fontSize" value="32px" id="font-size-32"> 32px
-                <input type="radio" name="fontSize" value="48px" id="font-size-48"> 48px
-                <input type="radio" name="fontSize" value="60px" id="font-size-60"> 60px
+                    <h4>Tamaño De Fuente</h4>
+                    <input type="radio" name="fontSize" value="20px" id="font-size-20" checked> 20px
+                    <input type="radio" name="fontSize" value="28px" id="font-size-28"> 28px
+                    <input type="radio" name="fontSize" value="32px" id="font-size-32"> 32px
+                    <input type="radio" name="fontSize" value="48px" id="font-size-48"> 48px
+                    <input type="radio" name="fontSize" value="60px" id="font-size-60"> 60px
 
-                <h4>Monto</h4>
-                <input type="number" placeholder="$">
+                    <h4>Monto</h4>
+                    <input type="number" name="monto" placeholder="$" required>
 
-                <h4>Ubicación del Monto</h4>
-                <div class="opciones-ubicacion">
-                    <div>
-                        <label for="ubicacion-inferior-derecha">
-                            <img class="ubicacion-icon inferior-derecha" src="./assets/bottom-right.png"
-                                alt="Esquina Inferior Derecha">
-                        </label>
-                        <input type="radio" name="ubi" value="bottom-right" id="ubicacion-inferior-derecha" checked>
+                    <h4>Ubicación del Monto</h4>
+                    <div class="opciones-ubicacion">
+                        <div>
+                            <label for="ubicacion-inferior-derecha">
+                                <img class="ubicacion-icon inferior-derecha" src="./assets/bottom-right.png"
+                                    alt="Esquina Inferior Derecha">
+                            </label>
+                            <input type="radio" name="ubi" value="bottom-right" id="ubicacion-inferior-derecha" checked>
+                        </div>
+                        <div>
+                            <label for="ubicacion-inferior-izquierda">
+                                <img class="ubicacion-icon inferior-izquierda" src="./assets/bottom-left.png"
+                                    alt="Esquina Inferior Izquierda">
+                            </label>
+                            <input type="radio" name="ubi" value="bottom-left" id="ubicacion-inferior-izquierda">
+                        </div>
+                        <div>
+                            <label for="ubicacion-superior-derecha">
+                                <img class="ubicacion-icon superior-derecha" src="./assets/top-right.png"
+                                    alt="Esquina Superior Derecha">
+                            </label>
+                            <input type="radio" name="ubi" value="top-right" id="ubicacion-superior-derecha">
+                        </div>
+                        <div>
+                            <label for="ubicacion-superior-izquierda">
+                                <img class="ubicacion-icon superior-izquierda" src="./assets/top-left.png"
+                                    alt="Esquina Superior Izquierda">
+                            </label>
+                            <input type="radio" name="ubi" value="top-left" id="ubicacion-superior-izquierda">
+                        </div>
                     </div>
-                    <div>
-                        <label for="ubicacion-inferior-izquierda">
-                            <img class="ubicacion-icon inferior-izquierda" src="./assets/bottom-left.png"
-                                alt="Esquina Inferior Izquierda">
-                        </label>
-                        <input type="radio" name="ubi" value="bottom-left" id="ubicacion-inferior-izquierda">
-                    </div>
-                    <div>
-                        <label for="ubicacion-superior-derecha">
-                            <img class="ubicacion-icon superior-derecha" src="./assets/top-right.png"
-                                alt="Esquina Superior Derecha">
-                        </label>
-                        <input type="radio" name="ubi" value="top-right" id="ubicacion-superior-derecha">
-                    </div>
-                    <div>
-                        <label for="ubicacion-superior-izquierda">
-                            <img class="ubicacion-icon superior-izquierda" src="./assets/top-left.png"
-                                alt="Esquina Superior Izquierda">
-                        </label>
-                        <input type="radio" name="ubi" value="top-left" id="ubicacion-superior-izquierda">
-                    </div>
-                </div>
 
-                <h4>Fondo</h4>
-                <div class="opciones-fondo">
-                    <div>
-                        <label for="fondo1">
-                            <img class="fondo-icon" src="./assets/background-option.png" alt="Fondo 1">
-                        </label>
-                        <input type="radio" name="fondo" value="fondo1" id="fondo1" checked>
+                    <h4>Fondo</h4>
+                    <div class="opciones-fondo">
+                        <div>
+                            <label for="fondo1">
+                                <img class="fondo-icon" src="./assets/background-option.png" alt="Fondo 1">
+                            </label>
+                            <input type="radio" name="fondo" value="fondo1" id="fondo1" checked>
+                        </div>
+                        <div>
+                            <label for="fondo2">
+                                <img class="fondo-icon" src="./assets/background-option.png" alt="Fondo 2">
+                            </label>
+                            <input type="radio" name="fondo" value="fondo2" id="fondo2">
+                        </div>
+                        <div>
+                            <label for="fondo3">
+                                <img class="fondo-icon" src="./assets/background-option.png" alt="Fondo 3">
+                            </label>
+                            <input type="radio" name="fondo" value="fondo3" id="fondo3">
+                        </div>
+                        <div>
+                            <label for="fondo4">
+                                <img class="fondo-icon" src="./assets/background-option.png" alt="Fondo 4">
+                            </label>
+                            <input type="radio" name="fondo" value="fondo4" id="fondo4">
+                        </div>
+                        <div>
+                            <label for="fondo5">
+                                <img class="fondo-icon" src="./assets/background-option.png" alt="Fondo 5">
+                            </label>
+                            <input type="radio" name="fondo" value="fondo5" id="fondo5">
+                        </div>
                     </div>
-                    <div>
-                        <label for="fondo2">
-                            <img class="fondo-icon" src="./assets/background-option.png" alt="Fondo 2">
-                        </label>
-                        <input type="radio" name="fondo" value="fondo2" id="fondo2">
-                    </div>
-                    <div>
-                        <label for="fondo3">
-                            <img class="fondo-icon" src="./assets/background-option.png" alt="Fondo 3">
-                        </label>
-                        <input type="radio" name="fondo" value="fondo3" id="fondo3">
-                    </div>
-                    <div>
-                        <label for="fondo4">
-                            <img class="fondo-icon" src="./assets/background-option.png" alt="Fondo 4">
-                        </label>
-                        <input type="radio" name="fondo" value="fondo4" id="fondo4">
-                    </div>
-                    <div>
-                        <label for="fondo5">
-                            <img class="fondo-icon" src="./assets/background-option.png" alt="Fondo 5">
-                        </label>
-                        <input type="radio" name="fondo" value="fondo5" id="fondo5">
-                    </div>
-                </div>
-<!--CHEQUEAR QUE EL BOTON SUBMIT FUNCIONE-->
-                <a class="link-no-deco" href="./carrito.html"><button class="submit">Confirmar</button></a>
+
+                    <button type="submit" class="submit">Confirmar</button>
+                </form>
             </div>
         </section>
     </main>

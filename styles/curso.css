@@ -183,8 +183,6 @@ details[open]>summary::after {
     border-radius: 16px;
     padding: 0.5em;
     position: relative;
-    /*el proximo elemento con absolut(top) SOLO
-    podra llegar arriba hasta este relative*/
 }
 
 .imagen img {
@@ -255,7 +253,6 @@ details[open]>summary::after {
         flex-direction: column;
         align-items: center;
     }
-
 }
 
 /*DESDE 481px HASTA 768px INCUIDO*/
@@ -289,7 +286,7 @@ details[open]>summary::after {
         font-size: 14px;
     }
 
-    .contenedor-docente{
+    .contenedor-docente {
         padding: 1em 3.5em;
     }
 
@@ -317,7 +314,7 @@ details[open]>summary::after {
         gap: 3.5%;
         padding: 4% 7%;
     }
-    
+
     .imagen-curso img {
         height: 8em;
         width: 8em;
@@ -360,7 +357,7 @@ details[open]>summary::after {
         font-size: 12px;
     }
 
-    .contenedor-docente{
+    .contenedor-docente {
         padding: 1em 2em;
     }
 
@@ -371,7 +368,7 @@ details[open]>summary::after {
     .contenedor-detalle li {
         margin-left: 0.5em;
     }
-    
+
     .lista-contenidos {
         margin-right: 1em;
     }
@@ -388,15 +385,14 @@ details[open]>summary::after {
         gap: 2%;
         padding: 4% 5%;
     }
-    
+
     .imagen-curso img {
         height: 6em;
         width: 6em;
     }
-    
+
     .detalle-curso__descripcion {
         font-size: 11px;
         margin-left: 1.5em;
     }
-    
 }

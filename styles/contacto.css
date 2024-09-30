@@ -14,8 +14,9 @@
     flex-direction: column;
     gap: 1.25rem;
     width: 43%;
-    
-    .contact-form__input, textarea {
+
+    .contact-form__input,
+    textarea {
         padding: .3125rem;
         height: 1.875rem;
         border-radius: .5rem;
@@ -37,21 +38,20 @@
         padding: .3125rem;
         box-sizing: border-box;
     }
-
 }
 
 .contact-form__submit {
     width: 5em;
     border-radius: .3125em;
     border: none;
-    color: white;
-    background-color: gray;
+    color: #ffffff;
+    background-color: #808080;
     height: 2.1875rem;
     align-self: flex-end;
 }
 
 .contact-form__submit:hover {
-    background-color: rgb(75, 75, 75);
+    background-color: #4b4b4b;
 }
 
 .contact-contenedor-info {
@@ -59,25 +59,25 @@
     width: 45%;
     display: flex;
     flex-direction: column;
-    
-    .logo-empresa{
+
+    .logo-empresa {
         width: 40%;
         align-self: center;
-        margin-top: 7%;         
+        margin-top: 7%;
     }
 }
 
-.contact-info{ 
+.contact-info {
     margin-top: 1.5em;
     text-align: center;
-    
-    img{
+
+    img {
         width: 1em;
     }
 
-    p{
-    display: inline-block;
-    margin-bottom: 0.5em;
+    p {
+        display: inline-block;
+        margin-bottom: 0.5em;
     }
 }
 
@@ -98,7 +98,7 @@
 }
 
 /*DESDE px HASTA 768px INCUIDO*/
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1024px) {
     .main {
         padding: 5em 3em;
     }
@@ -110,27 +110,27 @@
 
 
 /*DESDE 481px HASTA 768px INCUIDO*/
-@media (min-width: 600px) and (max-width: 768px){
+@media (min-width: 600px) and (max-width: 768px) {
     .main {
         padding: 5em 2em;
     }
 }
 
 /*HASTA 480px INCUIDOS*/
-@media (max-width: 600px){
-    .contact-form{
+@media (max-width: 600px) {
+    .contact-form {
         margin-top: 2.5em;
         display: flex;
         flex-direction: column;
         align-items: center;
- 
+
     }
 
     .contact-form__items {
         width: 90%;
     }
+
     .main {
         padding: 3em 1em;
     }
 }
-
