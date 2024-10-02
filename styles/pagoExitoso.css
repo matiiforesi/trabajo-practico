@@ -1,0 +1,23 @@
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pago-exitoso {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px #0000001a;
+    margin: 10em;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+p {
+    margin-bottom: 2em;
+}
