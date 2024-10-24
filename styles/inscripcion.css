@@ -36,14 +36,12 @@
     margin-top: 1.25em;
     display: flex;
     align-items: center;
-
-    img {
-        cursor: pointer;
-    }
+    width: 11.25rem;
+    cursor: pointer;
+    
 
     p {
         margin-left: .625rem;
-        cursor: pointer;
     }
 }
 

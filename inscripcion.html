@@ -53,29 +53,10 @@
             <h2>NOMBRE DEL CURSO</h2>
             <h3>Formulario de Inscripción</h3>
             <form class="contenedor-fields" method="get" action="./carrito.html">
-                <div class="field">
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="text" placeholder="Apellido" required>
-                    <input type="number" placeholder="DNI" required>
-                    <button type="button"> <img src="./assets/circulo-negativo.png" alt="delete"></button>
-                </div>
-
-                <div class="field">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
-                    <input type="number" placeholder="DNI">
-                    <button type="button"> <img src="./assets/circulo-negativo.png" alt="delete"></button>
-                </div>
-
-                <div class="field">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
-                    <input type="number" placeholder="DNI">
-                    <button type="button"> <img src="./assets/circulo-negativo.png" alt="delete"></button>
-                </div>
-
-                <div class="add-person">
-                    <img src="./assets/agregar.png" alt="add">
+               <div class="fields"></div>
+                
+                <div class="add-person" id="add-person">
+                    <img src="assets/agregar.png" alt="add">
                     <p>Agregar personas</p>
                 </div>
 
@@ -209,6 +190,7 @@
         </div>
 
     </footer>
+    <script src="scripts/inscripcion.js"></script>
 </body>
 
 </html>
