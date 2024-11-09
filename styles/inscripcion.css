@@ -38,7 +38,7 @@
     align-items: center;
     width: 11.25rem;
     cursor: pointer;
-    
+
 
     p {
         margin-left: .625rem;
@@ -62,23 +62,22 @@
 
 /*DESDE px HASTA 768px INCUIDO*/
 @media (min-width: 768px) and (max-width: 1024px) {
-    .field input{
-            width: 12.5rem;
+    .field input {
+        width: 12.5rem;
     }
 }
 
 
 /*DESDE 481px HASTA 768px INCUIDO*/
 @media (min-width: 480px) and (max-width: 768px) {
-    .field input{
-            width: 6.25rem;
+    .field input {
+        width: 6.25rem;
     }
 }
 
 /*HASTA 480px INCUIDOS*/
 @media (max-width: 480px) {
     .field input {
-            width: 3.125rem;
+        width: 3.125rem;
     }
 }
-

@@ -9,7 +9,7 @@
         margin-top: 1.875rem;
         margin-right: 7.5rem;
     }
-    
+
     .go-back-img {
         height: 2rem;
         width: 2rem;
@@ -19,7 +19,7 @@
     .go-back:hover {
         cursor: pointer;
     }
-    
+
     input {
         border: none;
         outline: none;
@@ -36,7 +36,7 @@
     }
 }
 
-.details{
+.details {
     display: flex;
     flex-direction: column;
     gap: .625rem;
@@ -50,12 +50,12 @@
 }
 
 .card-number-container {
-   display: flex;
-  
-   .tarjeta {
+    display: flex;
+
+    .tarjeta {
         height: 2rem;
         width: 2rem;
-        border-bottom: .125rem solid gray; 
+        border-bottom: .125rem solid gray;
     }
 }
 
@@ -80,12 +80,13 @@
     }
 }
 
-.save-card{
+.save-card {
     display: flex;
     align-items: center;
     gap: .3125rem;
     color: #676767;
     font-size: .75rem;
+
     input {
         width: .75rem;
         height: .75rem;
@@ -120,7 +121,7 @@
 }
 
 /*HASTA 480px INCUIDOS*/
-@media (max-width: 600px){
+@media (max-width: 600px) {
     .payment-details .go-back {
         margin-top: 1.875rem;
         margin-right: 1.5rem;

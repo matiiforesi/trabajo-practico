@@ -34,8 +34,9 @@
         <div class="contenedor-botones-sesion">
             <a href="./carrito.html"><button class="cart"><img src="./assets/cart.png"
                         alt="carrito"><span>1</span></button></a>
-            <a href="./inicioSesion.html"><button class="button-der">Iniciar sesión</button></a>
-            <a href="./registro.html"><button class="button-der">Registrarse</button></a>
+            <a href="./inicioSesion.html" id="iniciarSesionBtn"><button class="button-der">Iniciar sesión</button></a>
+            <a href="./registro.html" id="registrarseBtn"><button class="button-der">Registrarse</button></a>
+            <button id="cerrarSesionBtn" class="button-der">Cerrar sesión</button>
         </div>
     </header>
 
@@ -53,8 +54,8 @@
             <h2>NOMBRE DEL CURSO</h2>
             <h3>Formulario de Inscripción</h3>
             <form class="contenedor-fields" method="get" action="./carrito.html">
-               <div class="fields"></div>
-                
+                <div class="fields"></div>
+
                 <div class="add-person" id="add-person">
                     <img src="assets/agregar.png" alt="add">
                     <p>Agregar personas</p>
@@ -190,7 +191,9 @@
         </div>
 
     </footer>
-    <script src="scripts/inscripcion.js"></script>
+
+    <script src="./scripts/sesion.js"></script>
+    <script src="./scripts/inscripcion.js"></script>
 </body>
 
 </html>

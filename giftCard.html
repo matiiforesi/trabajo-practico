@@ -33,8 +33,9 @@
         <div class="contenedor-botones-sesion">
             <a href="./carrito.html"><button class="cart"><img src="./assets/cart.png"
                         alt="carrito"><span>1</span></button></a>
-            <a href="./inicioSesion.html"><button class="button-der">Iniciar sesión</button></a>
-            <a href="./registro.html"><button class="button-der">Registrarse</button></a>
+            <a href="./inicioSesion.html" id="iniciarSesionBtn"><button class="button-der">Iniciar sesión</button></a>
+            <a href="./registro.html" id="registrarseBtn"><button class="button-der">Registrarse</button></a>
+            <button id="cerrarSesionBtn" class="button-der">Cerrar sesión</button>
         </div>
     </header>
 
@@ -60,7 +61,8 @@
             <div class="detalle-giftcard">
                 <h1>Personalización de Gift Card</h1>
                 <form method="get" action="./payment-details.html">
-                    <input type="text" name="nombre_destinatario" placeholder="Ingrese el nombre del destinatario" required>
+                    <input type="text" name="nombre_destinatario" placeholder="Ingrese el nombre del destinatario"
+                        required>
 
                     <h4>Color del nombre</h4>
                     <div class="opciones-color">
@@ -289,8 +291,9 @@
         </div>
 
     </footer>
-</body>
 
-<script src="./scripts/giftcard.js"></script>
+    <script src="./scripts/sesion.js"></script>
+    <script src="./scripts/giftcard.js"></script>
+</body>
 
 </html>

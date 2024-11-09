@@ -80,7 +80,8 @@ hr {
         font-size: 14px;
     }
 
-    .listas-footer li, p {
+    .listas-footer li,
+    p {
         font-size: 14px;
     }
 }

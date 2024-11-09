@@ -14,7 +14,9 @@
     box-shadow: 0 0 10px #0000001a;
 }
 
-#registroFormulario {
+#registroFormulario,
+#formularioInicioSesion,
+#formularioRecupero {
     margin-right: 3%;
 }
 
@@ -51,4 +53,8 @@ input {
 
 .frases {
     margin-top: 1em;
+}
+
+#mensajeRecupero {
+    margin-top: 0.5em;
 }

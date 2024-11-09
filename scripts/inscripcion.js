@@ -1,9 +1,9 @@
 const form = document.querySelector('.contenedor-fields');
 const addPersonButton = document.getElementById('add-person');
 addPersonButton.addEventListener('click', addPerson);
-document.addEventListener('DOMContentLoaded',addPerson);
+document.addEventListener('DOMContentLoaded', addPerson);
 
-function addPerson(event){
+function addPerson(event) {
     const fields = document.querySelector('.fields');
     const field = document.createElement('div');
     field.classList.add('field');
@@ -24,7 +24,7 @@ function addPerson(event){
     button.type = 'button';
     button.id = 'delete';
     button.classList = 'deletePerson'
-    button.onclick = function (){
+    button.onclick = function () {
         if (fields.querySelectorAll('.field').length > 1) {
             field.remove();
         } else {
@@ -34,7 +34,7 @@ function addPerson(event){
     const deleteIcon = document.createElement('img');
     deleteIcon.src = '/assets/circulo-negativo.png'
     deleteIcon.alt = 'delete';
-    
+
     button.appendChild(deleteIcon);
 
     field.appendChild(nombre);

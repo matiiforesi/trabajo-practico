@@ -33,8 +33,9 @@
         <div class="contenedor-botones-sesion">
             <a href="./carrito.html"><button class="cart"><img src="./assets/cart.png"
                         alt="carrito"><span>1</span></button></a>
-            <a href="./inicioSesion.html"><button class="button-der">Iniciar sesión</button></a>
-            <a href="./registro.html"><button class="button-der">Registrarse</button></a>
+            <a href="./inicioSesion.html" id="iniciarSesionBtn"><button class="button-der">Iniciar sesión</button></a>
+            <a href="./registro.html" id="registrarseBtn"><button class="button-der">Registrarse</button></a>
+            <button id="cerrarSesionBtn" class="button-der">Cerrar sesión</button>
         </div>
     </header>
 
@@ -49,10 +50,10 @@
 
     <main>
         <section class="form-registro">
-            <a href="./home.html" class="link-no-deco"><img src="./assets/logoColor.png" alt="logo"></a>
+            <a href="./home.html"><img src="./assets/logoColor.png" alt="logo"></a>
             <div class="form-contenedor">
                 <h2>Iniciar Sesión</h2>
-                <form id="registroFormulario" method="get" action="./home.html">
+                <form id="formularioInicioSesion" method="get" action="./home.html">
                     <input type="email" name="email" placeholder="E-mail" required>
                     <input type="password" name="contraseña" placeholder="Contraseña" required>
                     <button type="submit" class="boton-aceptar">Aceptar</button>
@@ -188,6 +189,8 @@
         </div>
 
     </footer>
+
+    <script src="./scripts/sesion.js"></script>
 </body>
 
 </html>

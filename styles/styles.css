@@ -17,9 +17,12 @@ button:hover {
     background-color: #696969;
 }
 
+#cerrarSesionBtn {
+    display: none;
+}
+
 /*MENÚ*/
 .link-no-deco {
     text-decoration: none;
     color: inherit;
 }
-

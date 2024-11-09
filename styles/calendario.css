@@ -112,6 +112,7 @@
     .weekdays {
         grid-gap: 8px;
     }
+
     .weekday {
         font-size: 14px;
     }
@@ -124,7 +125,7 @@
 /*DESDE 481px HASTA 768px INCLUIDO*/
 @media (min-width: 481px) and (max-width: 768px) {
     .calendar {
-        grid-gap: 5px;  
+        grid-gap: 5px;
         width: 90%;
         padding: 10px;
     }
@@ -135,7 +136,7 @@
     }
 
     .weekday {
-        padding: 5px; 
+        padding: 5px;
         font-size: 12px;
     }
 

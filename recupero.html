@@ -49,14 +49,15 @@
 
     <main>
         <section class="form-registro">
-            <a href="./home.html" class="link-no-deco"><img src="./assets/logoColor.png" alt="logo"></a>
+            <a href="./home.html"><img src="./assets/logoColor.png" alt="logo"></a>
             <div class="form-contenedor">
                 <h2>Recupero de contraseña</h2>
-                <form id="registroFormulario" method="get" action="./inicioSesion.html">
+                <form id="formularioRecupero" method="get" action="./inicioSesion.html">
                     <input type="email" name="email" placeholder="E-mail" required>
                     <button type="submit" class="boton-aceptar">Aceptar</button>
                     <a href="./home.html"><button type="button" class="boton-cancelar">Cancelar</button></a>
                 </form>
+                <div id="mensajeRecupero"></div>
             </div>
         </section>
     </main>
@@ -182,6 +183,8 @@
         </div>
 
     </footer>
+
+    <script src="./scripts/recupero.js"></script>
 </body>
 
 </html>
