@@ -52,7 +52,7 @@
             <div class="giftcard">
                 <h1>Vista Previa</h1>
                 <div class="vistaPrevia">
-                    <span>Gift Card para Destinatario</span>
+                    <span class="nombre-destinatario">Gift Card para...</span>
                     <span class="valor">$0.00</span>
                 </div>
             </div>
@@ -60,29 +60,29 @@
             <div class="detalle-giftcard">
                 <h1>Personalización de Gift Card</h1>
                 <form method="get" action="./payment-details.html">
-                    <input type="text" name="nombre_destinatario" placeholder="Nombre del destinatario" required>
+                    <input type="text" name="nombre_destinatario" placeholder="Ingrese el nombre del destinatario" required>
 
-                    <h4>Color del fondo</h4>
+                    <h4>Color del nombre</h4>
                     <div class="opciones-color">
                         <div>
-                            <label for="color-gris" class="color-icon color-gris"></label>
-                            <input type="radio" name="color" value="gray" id="color-gris" checked>
+                            <label for="color-negro" class="color-icon color-negro"></label>
+                            <input type="radio" name="color" value="#000000" id="color-negro" checked>
                         </div>
                         <div>
-                            <label for="color-rosa" class="color-icon color-rosa"></label>
-                            <input type="radio" name="color" value="pink" id="color-rosa">
+                            <label for="color-blanco" class="color-icon color-blanco"></label>
+                            <input type="radio" name="color" value="#ffffff" id="color-blanco">
                         </div>
                         <div>
-                            <label for="color-azul" class="color-icon color-azul"></label>
-                            <input type="radio" name="color" value="blue" id="color-azul">
+                            <label for="color-azul-oscuro" class="color-icon color-azul-oscuro"></label>
+                            <input type="radio" name="color" value="#1c1c3c" id="color-azul-oscuro">
                         </div>
                         <div>
-                            <label for="color-verde" class="color-icon color-verde"></label>
-                            <input type="radio" name="color" value="green" id="color-verde">
+                            <label for="color-marron" class="color-icon color-marron"></label>
+                            <input type="radio" name="color" value="#4b3b2b" id="color-marron">
                         </div>
                         <div>
-                            <label for="color-naranja" class="color-icon color-naranja"></label>
-                            <input type="radio" name="color" value="orange" id="color-naranja">
+                            <label for="color-rojo" class="color-icon color-rojo"></label>
+                            <input type="radio" name="color" value="#8b0000" id="color-rojo">
                         </div>
                     </div>
 
@@ -132,31 +132,31 @@
                     <div class="opciones-fondo">
                         <div>
                             <label for="fondo1">
-                                <img class="fondo-icon" src="./assets/background-option.png" alt="Fondo 1">
+                                <img class="fondo-icon" src="./assets/background-option--gray.png" alt="Fondo 1">
                             </label>
                             <input type="radio" name="fondo" value="fondo1" id="fondo1" checked>
                         </div>
                         <div>
                             <label for="fondo2">
-                                <img class="fondo-icon" src="./assets/background-option.png" alt="Fondo 2">
+                                <img class="fondo-icon" src="./assets/background-option--pink.png" alt="Fondo 2">
                             </label>
                             <input type="radio" name="fondo" value="fondo2" id="fondo2">
                         </div>
                         <div>
                             <label for="fondo3">
-                                <img class="fondo-icon" src="./assets/background-option.png" alt="Fondo 3">
+                                <img class="fondo-icon" src="./assets/background-option--lightblue.png" alt="Fondo 3">
                             </label>
                             <input type="radio" name="fondo" value="fondo3" id="fondo3">
                         </div>
                         <div>
                             <label for="fondo4">
-                                <img class="fondo-icon" src="./assets/background-option.png" alt="Fondo 4">
+                                <img class="fondo-icon" src="./assets/background-option--green.png" alt="Fondo 4">
                             </label>
                             <input type="radio" name="fondo" value="fondo4" id="fondo4">
                         </div>
                         <div>
                             <label for="fondo5">
-                                <img class="fondo-icon" src="./assets/background-option.png" alt="Fondo 5">
+                                <img class="fondo-icon" src="./assets/background-option--orange.png" alt="Fondo 5">
                             </label>
                             <input type="radio" name="fondo" value="fondo5" id="fondo5">
                         </div>
@@ -290,5 +290,7 @@
 
     </footer>
 </body>
+
+<script src="./scripts/giftcard.js"></script>
 
 </html>
