@@ -1,5 +1,6 @@
 .course-registration {
     padding: 5em 10em;
+    box-sizing: border-box;
 }
 
 .course-registration h2 {
@@ -10,11 +11,12 @@
     display: flex;
     gap: 1.25em;
     padding-top: 1em;
+    flex-wrap: wrap;
 
     input {
         padding: .3125rem;
-        width: 31.25rem;
-        height: 1.875rem;
+        width: 12rem;
+        height: 1.75rem;
         border-radius: .3125rem;
     }
 
@@ -24,11 +26,13 @@
         margin: 0;
     }
 
-    button {
-        background: none;
-        border: none;
-        cursor: pointer;
-        align-self: center;
+    div {
+        display: flex;
+        align-items: center;
+
+        img {
+            cursor: pointer;
+        }
     }
 }
 
@@ -36,9 +40,10 @@
     margin-top: 1.25em;
     display: flex;
     align-items: center;
-    width: 11.25rem;
-    cursor: pointer;
 
+    img {
+        cursor: pointer;
+    }
 
     p {
         margin-left: .625rem;
@@ -48,16 +53,55 @@
 .registration-fee {
     margin-top: 1.25rem;
     display: flex;
-    gap: 1.25rem;
+    gap: 0.8rem;
     align-items: center;
 
     .fee-amount {
         padding: .3125rem;
-        width: 2.5rem;
+        width: auto;
         height: 1.25rem;
         color: white;
         background-color: #000;
+        border-radius: 0.5em;
     }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 1em;
+    border: 1px solid #888888;
+    width: 80%;
+}
+
+.modalButtons {
+    margin-top: 0.5em;
+    gap: 0.5em;
+}
+
+#confirmModal,
+#closeModal {
+    background-color: #808080;
+}
+
+#confirmModal:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+#closeModal:hover {
+    background-color: #dc3545;
+    color: white;
 }
 
 /*DESDE px HASTA 768px INCUIDO*/

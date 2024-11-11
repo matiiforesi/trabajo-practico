@@ -53,8 +53,17 @@
         <section>
             <h2>NOMBRE DEL CURSO</h2>
             <h3>Formulario de Inscripción</h3>
-            <form class="contenedor-fields" method="get" action="./carrito.html">
-                <div class="fields"></div>
+            <form class="contenedor-fields" id="registrationForm" method="get" action="./carrito.html">
+                <div class="field" id="personFields">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="text" placeholder="Apellido" required>
+                    <input type="number" placeholder="DNI" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" id="tel-number" placeholder="Teléfono">
+                    <div class="delete-person" id="delete-person">
+                        <img src="./assets/circulo-negativo.png" alt="delete">
+                    </div>
+                </div>
 
                 <div class="add-person" id="add-person">
                     <img src="assets/agregar.png" alt="add">
@@ -62,13 +71,26 @@
                 </div>
 
                 <div class="registration-fee">
-                    <div class="fee-amount">$0.00</div>
-                    <button type="submit" class="boton-inscripcion">CONFIRMAR</button>
-                    <a href="./home.html"><button type="button" class="boton-volver">VOLVER</button></a>
+                    <div class="fee-amount" id="feeAmount">USD 20</div>
+                    <button type="button" id="registerButton" class="boton-inscripcion">REGISTRAR</button>
+                    <a href="./home.html"><button type="button" class="boton-volver">CANCELAR</button></a>
                 </div>
             </form>
         </section>
+
+        <div id="summaryModal" class="modal" style="display: none;">
+            <div class="modal-content">
+
+                <h3>Resumen de Inscripción</h3>
+                <div id="summaryContent"></div>
+                <div class="modalButtons">
+                    <button id="confirmModal">Confirmar</button>
+                    <button id="closeModal">Volver</button>
+                </div>
+            </div>
+        </div>
     </main>
+
 
     <footer class="contenedor-footer">
         <div id="fila">

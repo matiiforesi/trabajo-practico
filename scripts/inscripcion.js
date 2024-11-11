@@ -1,46 +1,145 @@
-const form = document.querySelector('.contenedor-fields');
-const addPersonButton = document.getElementById('add-person');
-addPersonButton.addEventListener('click', addPerson);
-document.addEventListener('DOMContentLoaded', addPerson);
+const formulario = document.querySelector("#registrationForm");
+const añadirPersona = document.querySelector("#add-person");
+const tarifa = document.querySelector("#feeAmount");
+const botonRegistro = document.querySelector("#registerButton");
 
-function addPerson(event) {
-    const fields = document.querySelector('.fields');
-    const field = document.createElement('div');
-    field.classList.add('field');
+const modal = document.querySelector("#summaryModal");
+const resumenModal = document.querySelector("#summaryContent");
+const confirmarModal = document.querySelector("#confirmModal");
+const cerrarModal = document.querySelector("#closeModal");
 
-    const nombre = document.createElement('input');
-    nombre.type = 'text';
-    nombre.placeholder = 'Nombre';
+const tarifaBase = 20; // Ahora const, despúes capaz es let.
+let contadorPersonas = 1;
 
-    const apellido = document.createElement('input');
-    apellido.type = 'text';
-    apellido.placeholder = 'Apellido';
+function patternTelefono(input) {
+    input.addEventListener("input", function (event) {
+        let value = event.target.value;
+        value = value.replace(/[^0-9-]/g, ""); // Permite solo números y guiones.
+        event.target.value = value;
+    });
+}
 
-    const numero = document.createElement('input');
-    numero.type = 'number';
-    numero.placeholder = 'DNI';
+// Si se ingresa un teléfono en los inputs de la primera persona, se le aplica el pattern.
+const telefonoDefault = document.querySelector("#tel-number");
+if (telefonoDefault) patternTelefono(telefonoDefault);
 
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.id = 'delete';
-    button.classList = 'deletePerson'
-    button.onclick = function () {
-        if (fields.querySelectorAll('.field').length > 1) {
-            field.remove();
+añadirPersona.addEventListener("click", () => {
+    contadorPersonas++;
+
+    const nuevaPersona = document.createElement("div");
+    nuevaPersona.classList.add("field");
+
+    nuevaPersona.innerHTML = `
+        <input type="text" placeholder="Nombre" required>
+        <input type="text" placeholder="Apellido" required>
+        <input type="number" placeholder="DNI" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" id="tel-number" placeholder="Teléfono">
+        <div class="delete-person" id="delete-person">
+            <img src="./assets/circulo-negativo.png" alt="delete">
+        </div>
+    `;
+
+    // .insertBefore() añade un nodo como hijo de otro antes que ese otro, siendo (nuevoNodo, nodoReferencia).
+    formulario.insertBefore(nuevaPersona, añadirPersona);
+    actualizarTarifa();
+
+    // Si se ingresa un teléfono en los inputs de una persona agregada, se le aplica el pattern.
+    const nuevoTelefono = nuevaPersona.querySelector("#tel-number");
+    if (nuevoTelefono) patternTelefono(nuevoTelefono);
+});
+
+function actualizarTarifa() {
+    tarifa.textContent = `USD ${tarifaBase * contadorPersonas}`;
+}
+
+botonRegistro.addEventListener("click", (event) => {
+    event.preventDefault();
+    resumenModal.innerHTML = "";
+
+    const camposResumen = formulario.querySelectorAll(".field");
+    let isValid = true;
+
+    camposResumen.forEach((field, index) => {
+        const nombreAValidar = field.querySelector('input[placeholder="Nombre"]').value;
+        const apellidoAValidar = field.querySelector('input[placeholder="Apellido"]')?.value;
+        const dniAValidar = field.querySelector('input[placeholder="DNI"]')?.value;
+        const emailAValidar = field.querySelector('input[placeholder="Email"]')?.value;
+        const telefonoAValidar = field.querySelector('input[placeholder="Teléfono"]')?.value;
+
+        if (nombreAValidar === "") {
+            alert("Por favor ingrese un nombre.");
+            isValid = false;
+        }
+
+        if (apellidoAValidar === "") {
+            alert("Por favor ingrese un apellido.");
+            isValid = false;
+        }
+
+        if (dniAValidar === "" || dniAValidar.length > 8) {
+            alert("Por favor ingrese un DNI válido.");
+            isValid = false;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailAValidar)) {
+            alert("Por favor ingrese un correo electrónico válido.");
+            isValid = false;
+        }
+
+        const telRegex = /^\d{4}-?\d{4}$/;
+        if (telefonoAValidar !== "" && !telRegex.test(telefonoAValidar)) {
+            alert("Por favor ingrese un número de teléfono válido.");
+            isValid = false;
+        }
+
+        if (isValid) {
+            resumenModal.innerHTML += `<p><strong>${index + 1}.</strong> ${nombreAValidar} ${apellidoAValidar} - ${emailAValidar}</p>`;
+        }
+    });
+
+    if (isValid) {
+        modal.style.display = "block";
+    }
+});
+
+confirmarModal.onclick = function () {
+    window.location.href = "./carrito.html";
+};
+
+cerrarModal.onclick = function () {
+    modal.style.display = "none";
+};
+
+formulario.addEventListener("click", (event) => {
+    // .closest() busca al ancestro que más cercano al click. Lo usé porque no funcionaba cuando se hacia click sobre la imágen.
+    if (event.target && event.target.closest('.delete-person')) {
+        const campos = formulario.querySelectorAll(".field");
+
+        // Si solo hay una persona, se limpian los campos.
+        if (campos.length === 1) {
+            const persona = campos[0];
+            const nombreABorrar = persona.querySelector('input[placeholder="Nombre"]');
+            const apellidoABorrar = persona.querySelector('input[placeholder="Apellido"]');
+            const dniABorrar = persona.querySelector('input[placeholder="DNI"]');
+            const emailABorrar = persona.querySelector('input[placeholder="Email"]');
+            const telefonoABorrar = persona.querySelector('input[placeholder="Teléfono"]');
+
+            // Solo se limpian los existentes.
+            if (nombreABorrar) nombreABorrar.value = '';
+            if (apellidoABorrar) apellidoABorrar.value = '';
+            if (dniABorrar) dniABorrar.value = '';
+            if (emailABorrar) emailABorrar.value = '';
+            if (telefonoABorrar) telefonoABorrar.value = '';
         } else {
-            alert('Debe haber al menos un campo.');
+            // Si hay más de una persona, se elimina la persona seleccionada. 
+            const personaAEliminar = event.target.closest(".field");
+            if (personaAEliminar) {
+                personaAEliminar.remove();
+                contadorPersonas--;
+                actualizarTarifa();
+            }
         }
     }
-    const deleteIcon = document.createElement('img');
-    deleteIcon.src = '/assets/circulo-negativo.png'
-    deleteIcon.alt = 'delete';
-
-    button.appendChild(deleteIcon);
-
-    field.appendChild(nombre);
-    field.appendChild(apellido);
-    field.appendChild(numero);
-    field.appendChild(button);
-
-    fields.appendChild(field);
-}
+});
