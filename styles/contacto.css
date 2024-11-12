@@ -81,6 +81,43 @@
     }
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 1em;
+    border: 1px solid #888888;
+    width: 12em;
+}
+
+.modalButtons {
+    margin-top: 0.5em;
+    gap: 0.5em;
+}
+
+#confirmModal {
+    background-color: #808080;
+}
+
+#confirmModal:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+.error-message {
+    color: red;
+    font-size: 1em;
+}
+
 .location-section {
     margin-top: 3.125em;
 
@@ -118,6 +155,10 @@
 
 /*HASTA 480px INCUIDOS*/
 @media (max-width: 600px) {
+    .main {
+        padding: 3em 1em;
+    }
+
     .contact-form {
         margin-top: 2.5em;
         display: flex;
@@ -128,9 +169,5 @@
 
     .contact-form__items {
         width: 90%;
-    }
-
-    .main {
-        padding: 3em 1em;
     }
 }

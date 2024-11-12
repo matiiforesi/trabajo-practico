@@ -104,16 +104,14 @@
     align-items: center;
     text-transform: uppercase;
     border-radius: 0;
-    color: #fff;
-    background-color: #24CF5F;
+    color: #ffffff;
+    background-color: #008000;
     height: 2.5rem;
     width: 7rem;
-    transition: transform 0.3s ease;
 }
 
 .pay:hover {
-    transform: scale(1.10);
-    background-color: #24CF5F;
+    background-color: #90ee90;
 }
 
 .details-title {

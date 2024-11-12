@@ -12,15 +12,21 @@ if (formularioInicioSesion) {
         // La arrow function (=>) funciona como condición del .find() de la misma manera que en el registro pero se le agrega la comprobación de la contraseña.
         const usuario = usuarios.find(user => user.email === email && user.contraseña === contraseña);
 
+        const mensajeContenedor = document.querySelector("#mensajeError");
+        mensajeContenedor.innerHTML = "";
+
         if (usuario) {
             localStorage.setItem("usuarioLogueado", JSON.stringify(usuario));
-            alert("Inicio de sesión exitoso. ¡Bienvenido!");
             location.href = "./home.html";
         } else {
-            alert("Datos inválidos. Por favor, verifica tu correo y contraseña.");
+            const mensaje = document.createElement("p");
+            mensaje.textContent = "Datos inválidos. Por favor, verifica tu correo y contraseña.";
+            mensaje.style.color = "red";
+            mensajeContenedor.appendChild(mensaje);
         }
     });
 }
+
 
 const iniciarSesionBtn = document.querySelector('#iniciarSesionBtn');
 const registrarseBtn = document.querySelector('#registrarseBtn');

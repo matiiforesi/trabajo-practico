@@ -33,15 +33,11 @@
 }
 
 .most-sold-p {
-    width: 8.125rem;
-    height: 1rem;
+    min-width: 7.625rem;
     padding: .3125rem;
     background-color: #eceb98;
     color: #3d3c13;
     font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .detalles-del-curso {
@@ -73,7 +69,7 @@
 }
 
 .stars {
-    min-width: 6.25rem;
+    min-width: 5.8rem;
 }
 
 .pagar {
@@ -85,14 +81,14 @@
     width: 20rem;
     height: 3rem;
     border-radius: 0rem;
-    background-color: #a435f0;
+    background-color: #008000;
     font-size: 1rem;
     line-height: 1.2rem;
     font-weight: 700;
 }
 
 .pagar:hover {
-    background-color: #8710d8;
+    background-color: #90ee90;
 }
 
 .promocion {
@@ -125,6 +121,7 @@
 .valoraciones {
     color: #6a6f73;
     font-size: .75rem;
+    min-width: 7.25rem;
     align-self: center;
 }
 
@@ -133,26 +130,23 @@
     width: 20rem;
 
     input {
-        height: 2.125rem;
         width: 80%;
         padding: .1875rem;
         box-sizing: border-box;
-        outline: none;
         border: .0625rem solid #000000;
-        border-right: none;
     }
 
     button {
         height: 2.125rem;
         border-radius: 0;
-        background-color: #a435f0;
+        background-color: #008000;
         box-sizing: border-box;
         font-weight: 700;
         width: 20%;
     }
 
     button:hover {
-        background-color: #8710d8;
+        background-color: #90ee90;
     }
 }
 
@@ -171,7 +165,7 @@
     .cart-pago {
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: center;
 
         hr {
             margin-top: .9375rem;
@@ -190,7 +184,7 @@
     .cart-pago {
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: center;
 
         hr {
             margin-top: .9375rem;
@@ -206,10 +200,14 @@
         flex-direction: column;
     }
 
+    .valoraciones {
+        display: none;
+    }
+
     .cart-pago {
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: center;
 
         hr {
             margin-top: .9375rem;

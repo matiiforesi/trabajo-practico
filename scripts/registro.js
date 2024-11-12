@@ -9,8 +9,14 @@ registroFormulario.addEventListener("submit", function (event) {
     const contraseña = event.target.contraseña.value;
     const validarContraseña = event.target.validar_contraseña.value;
 
+    const mensajeContenedor = document.querySelector("#mensajeError");
+    mensajeContenedor.innerHTML = "";
+
     if (contraseña !== validarContraseña) {
-        alert("Las contraseñas no coinciden.");
+        const mensaje = document.createElement("p");
+        mensaje.textContent = "Las contraseñas no coinciden.";
+        mensaje.style.color = "red";
+        mensajeContenedor.appendChild(mensaje);
         return;
     }
 
@@ -22,7 +28,10 @@ registroFormulario.addEventListener("submit", function (event) {
     // Arrow function (=>) como condición del .find() busca sobre user, que representa a cada elemento del array usuarios, si el mail ingresado coincide con alguno ya registrado.
     const usuarioExistente = usuarios.find(user => user.email === email);
     if (usuarioExistente) {
-        alert("Este correo ya fue registrado.");
+        const mensaje = document.createElement("p");
+        mensaje.textContent = "Este correo ya fue registrado.";
+        mensaje.style.color = "red";
+        mensajeContenedor.appendChild(mensaje);
         return;
     }
 

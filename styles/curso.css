@@ -9,6 +9,7 @@
 .imagen-curso img {
     height: 10em;
     width: 10em;
+    border-radius: 1em;
 }
 
 .detalle-curso h3 {
@@ -32,7 +33,7 @@ li {
 .contenedor-botones-curso {
     display: flex;
     gap: 1em;
-    padding-top: 2em;
+    padding-top: 1em;
 }
 
 .boton-inscripcion {
@@ -52,13 +53,14 @@ li {
 
 /*PARA EL DETAIL & SUMMARY*/
 .contenido-clase {
-    padding: 4% 10%;
+    padding: 0 10%;
+    margin-bottom: 2em;
 }
 
 .contenedor-detalle {
     margin-top: 1.5em;
     border-style: solid;
-    padding: 2%;
+    padding: 1%;
     padding-left: 5em;
     border-radius: 16px;
     line-height: 2em;
@@ -176,7 +178,7 @@ details[open]>summary::after {
 
 .publicidades {
     width: 15em;
-    height: 19em;
+    height: 20em;
     border-style: solid;
     border-radius: 16px;
     padding: 0.5em;
@@ -185,6 +187,9 @@ details[open]>summary::after {
 
 .imagen img {
     max-width: 100%;
+    border-radius: 1em;
+    height: 215px;
+    width: 100%;
 }
 
 .detalle-de-curso {
@@ -195,12 +200,16 @@ details[open]>summary::after {
 
 .detalle-de-curso span {
     font-size: 1.5em;
-    margin-left: 0.5em;
+}
+
+b {
+    margin: 0.5em;
 }
 
 .detalle-de-curso-der {
-    text-align: right;
+    text-align: center;
     margin-top: 1em;
+    min-width: 101px;
 }
 
 .detalle-de-curso-der h4 {
@@ -208,22 +217,19 @@ details[open]>summary::after {
 }
 
 .detalle-de-curso-der h6 {
-    margin-bottom: 0.5em;
-    margin-right: 2em;
+    margin: 0.5em auto;
+    max-width: 90px;
 }
 
 .publicidades-precio {
-    background: #000000;
+    background-color: #000000;
     color: #ffffff;
-    border-style: solid;
-    border-width: thin;
-    border-color: #ffffff;
-    padding: 2px 15px;
+    border: 1px solid #ffffff;
+    padding: 2px 5px;
     position: absolute;
     right: 1em;
     top: 11em;
-    border-radius: 3px;
-    z-index: 10;
+    border-radius: 0.5em;
 }
 
 /*DESDE px HASTA 768px INCUIDO*/

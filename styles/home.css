@@ -1,22 +1,26 @@
-/*BOTONES*/
-.slider__navegation button {
-    background-color: transparent;
-}
-
-.course-card button {
-    margin-top: auto;
-    background-color: #dddddd;
-    color: #000000;
-}
-
-.course-card button:hover {
-    background-color: #696969;
-    color: #ffffff;
+body {
+    overflow-x: hidden;
+    /* Evita el desplazamiento horizontal */
 }
 
 /*SLIDER*/
 .slider {
     width: 100%;
+}
+
+.slider__container {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slider__item {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    /* Posiciona el texto sobre cada una de las imágenes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .course {
@@ -26,21 +30,34 @@
 
 .course-info {
     position: absolute;
-    top: 250px;
+    top: 180px;
     left: 150px;
     color: #ffffff;
+    text-shadow: 1px 1px 2px black;
+    padding: 0 10px;
+    max-width: 70%;
 }
 
 .course-info h1 {
     font-size: 40px;
 }
 
+.course-info h3 {
+    font-size: 20px;
+}
+
+/* NAVEGACIÓN DEL SLIDER */
 .slider__navegation {
-    position: absolute;
-    top: 250px;
-    width: 100%;
     display: flex;
+    position: absolute;
+    top: 40%;
+    width: 100%;
     justify-content: space-between;
+}
+
+.slider__navegation button {
+    background-color: transparent;
+    border: none;
 }
 
 /*PASOS INSCRIPCIÓN*/
@@ -138,6 +155,7 @@
     }
 
     .course-info {
+        top: 110px;
         left: 60px;
     }
 
@@ -169,11 +187,16 @@
     }
 
     .course-info {
-        left: 60px;
+        top: 100px;
+        left: 40px;
     }
 
     .course-info h1 {
-        font-size: 30px;
+        font-size: 25px;
+    }
+
+    .course-info h3 {
+        font-size: 16px;
     }
 
     .inscription-steps {

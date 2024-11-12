@@ -52,9 +52,11 @@ input {
 }
 
 .frases {
+    display: flex;
     margin-top: 1em;
 }
 
-#mensajeRecupero {
+#mensajeRecupero,
+#mensajeError {
     margin-top: 0.5em;
 }

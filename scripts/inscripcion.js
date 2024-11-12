@@ -8,7 +8,7 @@ const resumenModal = document.querySelector("#summaryContent");
 const confirmarModal = document.querySelector("#confirmModal");
 const cerrarModal = document.querySelector("#closeModal");
 
-const tarifaBase = 20; // Ahora const, despúes capaz es let.
+const tarifaBase = 20.00;
 let contadorPersonas = 1;
 
 function patternTelefono(input) {
@@ -50,7 +50,7 @@ añadirPersona.addEventListener("click", () => {
 });
 
 function actualizarTarifa() {
-    tarifa.textContent = `USD ${tarifaBase * contadorPersonas}`;
+    tarifa.textContent = `$${parseFloat(tarifaBase * contadorPersonas).toFixed(2)}`;
 }
 
 botonRegistro.addEventListener("click", (event) => {

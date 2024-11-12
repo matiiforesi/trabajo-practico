@@ -10,7 +10,6 @@
 
 .header .home img {
     max-height: 3em;
-    margin: 0 4.5em;
 }
 
 .header .search-bar {
@@ -33,11 +32,16 @@
 
 .cart {
     background-color: #26272b;
+    min-width: 48px;
 }
 
 .button-der {
     background-color: #808080;
     height: 3em;
+}
+
+#iniciarSesionBtn {
+    min-width: 94px;
 }
 
 
