@@ -7,8 +7,9 @@
     <title>Gift Card</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/carrito.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/giftCard.css">
 </head>
 
@@ -24,18 +25,18 @@
                 <option value="JavaScript"></option>
                 <option value="HTML & CSS"></option>
                 <option value="Python"></option>
-                <option value="C"></option>
+                <option value="SQL"></option>
                 <option value="Java"></option>
                 <option value="Diseño UI/UX"></option>
             </datalist>
         </div>
 
         <div class="contenedor-botones-sesion">
-            <a href="./carrito.html"><button class="cart"><img src="./assets/cart.png"
-                        alt="carrito"><span>1</span></button></a>
+            <button class="cart"><img src="./assets/cart.png" alt="carrito"><span>0</span></button></a>
             <a href="./inicioSesion.html" id="iniciarSesionBtn"><button class="button-der">Iniciar sesión</button></a>
             <a href="./registro.html" id="registrarseBtn"><button class="button-der">Registrarse</button></a>
             <button id="cerrarSesionBtn" class="button-der">Cerrar sesión</button>
+            <button id="eliminarUsuarioBtn" class="button-der">Eliminar usuario</button>
         </div>
     </header>
 
@@ -49,6 +50,19 @@
     </nav>
 
     <main>
+        <aside id="sidebar" class="sidebar">
+            <div class="titulo">
+                <h2>Carrito</h2>
+                <button id="cerrarSidebarBtn" class="cerrarSidebarBtn">X</button>
+            </div>
+            <p class="mensajeVacio">Tu carrito está vacío</p>
+            <ul id="listaSidebar"></ul>
+            <div class="totalSidebar">
+                <p>Total: <span id="precioSidebar"></span></p>
+                <a href="./carrito.html" class="irCarritoBtn">Ver Carrito</a>
+            </div>
+        </aside>
+
         <section class="contenedor-giftcard">
             <div class="giftcard">
                 <h1>Vista Previa</h1>
@@ -292,6 +306,8 @@
 
     </footer>
 
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/carrito.js"></script>
     <script src="./scripts/sesion.js"></script>
     <script src="./scripts/giftcard.js"></script>
 </body>

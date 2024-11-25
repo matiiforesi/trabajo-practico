@@ -8,7 +8,25 @@ const resumenModal = document.querySelector("#summaryContent");
 const confirmarModal = document.querySelector("#confirmModal");
 const cerrarModal = document.querySelector("#closeModal");
 
-const tarifaBase = 20.00;
+const urlParams = new URLSearchParams(window.location.search);
+
+// Obtiene el nombre del curso según el que se haya seleccionado.
+function obtenerTitulo() {
+    const nombreCursoSeleccionado = urlParams.get("curso");
+    const nombreCurso = document.querySelector("h2");
+    nombreCurso.textContent = `${nombreCursoSeleccionado}`;
+}
+
+// Obtiene la tarifa base según el curso seleccionado.
+function obtenerTarifaBase() {
+    const valorCursoSeleccionado = urlParams.get("valor");
+    const tarifaBase = parseFloat(valorCursoSeleccionado.replace('$', '').replace(',', '.'));
+    return tarifaBase;
+}
+
+let tarifaBase = obtenerTarifaBase();
+let nombreCurso = obtenerTitulo()
+
 let contadorPersonas = 1;
 
 function patternTelefono(input) {
@@ -21,20 +39,21 @@ function patternTelefono(input) {
 
 // Si se ingresa un teléfono en los inputs de la primera persona, se le aplica el pattern.
 const telefonoDefault = document.querySelector("#tel-number");
-if (telefonoDefault) patternTelefono(telefonoDefault);
+if (telefonoDefault) {
+    patternTelefono(telefonoDefault);
+}
 
 añadirPersona.addEventListener("click", () => {
     contadorPersonas++;
 
     const nuevaPersona = document.createElement("div");
     nuevaPersona.classList.add("field");
-
     nuevaPersona.innerHTML = `
         <input type="text" placeholder="Nombre" required>
         <input type="text" placeholder="Apellido" required>
         <input type="number" placeholder="DNI" required>
         <input type="email" placeholder="Email" required>
-        <input type="text" id="tel-number" placeholder="Teléfono">
+        <input type="text" id="tel-number" placeholder="Teléfono (opcional)">
         <div class="delete-person" id="delete-person">
             <img src="./assets/circulo-negativo.png" alt="delete">
         </div>
@@ -46,12 +65,57 @@ añadirPersona.addEventListener("click", () => {
 
     // Si se ingresa un teléfono en los inputs de una persona agregada, se le aplica el pattern.
     const nuevoTelefono = nuevaPersona.querySelector("#tel-number");
-    if (nuevoTelefono) patternTelefono(nuevoTelefono);
+    if (nuevoTelefono) {
+        patternTelefono(nuevoTelefono);
+    }
 });
 
 function actualizarTarifa() {
-    tarifa.textContent = `$${parseFloat(tarifaBase * contadorPersonas).toFixed(2)}`;
+    const tarifaTotal = tarifaBase * contadorPersonas;
+    tarifa.textContent = `$${tarifaTotal.toFixed(2)}`;
 }
+
+formulario.addEventListener("click", (event) => {
+    // .closest() busca al ancestro que más cercano al click. Lo usé porque no funcionaba cuando se hacia click sobre la imágen.
+    if (event.target && event.target.closest(".delete-person")) {
+        const campos = formulario.querySelectorAll(".field");
+
+        // Si solo hay una persona, limpia los campos.
+        if (campos.length === 1) {
+            const persona = campos[0];
+            const nombreABorrar = persona.querySelector('input[placeholder="Nombre"]');
+            const apellidoABorrar = persona.querySelector('input[placeholder="Apellido"]');
+            const dniABorrar = persona.querySelector('input[placeholder="DNI"]');
+            const emailABorrar = persona.querySelector('input[placeholder="Email"]');
+            const telefonoABorrar = persona.querySelector('input[placeholder="Teléfono (opcional)"]');
+
+            // Solo se limpian los existentes.
+            if (nombreABorrar) {
+                nombreABorrar.value = '';
+            }
+            if (apellidoABorrar) {
+                apellidoABorrar.value = '';
+            }
+            if (dniABorrar) {
+                dniABorrar.value = '';
+            }
+            if (emailABorrar) {
+                emailABorrar.value = '';
+            }
+            if (telefonoABorrar) {
+                telefonoABorrar.value = '';
+            }
+        } else {
+            // Si hay más de una persona, se elimina la persona seleccionada. 
+            const personaAEliminar = event.target.closest(".field");
+            if (personaAEliminar) {
+                personaAEliminar.remove();
+                contadorPersonas--;
+                actualizarTarifa();
+            }
+        }
+    }
+});
 
 botonRegistro.addEventListener("click", (event) => {
     event.preventDefault();
@@ -61,11 +125,11 @@ botonRegistro.addEventListener("click", (event) => {
     let isValid = true;
 
     camposResumen.forEach((field, index) => {
-        const nombreAValidar = field.querySelector('input[placeholder="Nombre"]').value;
+        const nombreAValidar = field.querySelector('input[placeholder="Nombre"]')?.value;
         const apellidoAValidar = field.querySelector('input[placeholder="Apellido"]')?.value;
         const dniAValidar = field.querySelector('input[placeholder="DNI"]')?.value;
         const emailAValidar = field.querySelector('input[placeholder="Email"]')?.value;
-        const telefonoAValidar = field.querySelector('input[placeholder="Teléfono"]')?.value;
+        const telefonoAValidar = field.querySelector('input[placeholder="Teléfono (opcional)"]')?.value;
 
         if (nombreAValidar === "") {
             alert("Por favor ingrese un nombre.");
@@ -112,34 +176,4 @@ cerrarModal.onclick = function () {
     modal.style.display = "none";
 };
 
-formulario.addEventListener("click", (event) => {
-    // .closest() busca al ancestro que más cercano al click. Lo usé porque no funcionaba cuando se hacia click sobre la imágen.
-    if (event.target && event.target.closest('.delete-person')) {
-        const campos = formulario.querySelectorAll(".field");
-
-        // Si solo hay una persona, se limpian los campos.
-        if (campos.length === 1) {
-            const persona = campos[0];
-            const nombreABorrar = persona.querySelector('input[placeholder="Nombre"]');
-            const apellidoABorrar = persona.querySelector('input[placeholder="Apellido"]');
-            const dniABorrar = persona.querySelector('input[placeholder="DNI"]');
-            const emailABorrar = persona.querySelector('input[placeholder="Email"]');
-            const telefonoABorrar = persona.querySelector('input[placeholder="Teléfono"]');
-
-            // Solo se limpian los existentes.
-            if (nombreABorrar) nombreABorrar.value = '';
-            if (apellidoABorrar) apellidoABorrar.value = '';
-            if (dniABorrar) dniABorrar.value = '';
-            if (emailABorrar) emailABorrar.value = '';
-            if (telefonoABorrar) telefonoABorrar.value = '';
-        } else {
-            // Si hay más de una persona, se elimina la persona seleccionada. 
-            const personaAEliminar = event.target.closest(".field");
-            if (personaAEliminar) {
-                personaAEliminar.remove();
-                contadorPersonas--;
-                actualizarTarifa();
-            }
-        }
-    }
-});
+actualizarTarifa();

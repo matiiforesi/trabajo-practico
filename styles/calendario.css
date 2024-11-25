@@ -48,7 +48,11 @@
 }
 
 .course-1,
-.course-2 {
+.course-2,
+.course-3,
+.course-4,
+.course-5,
+.course-6 {
     margin-top: 5px;
     font-size: 0.8em;
     color: #ffffff;
@@ -62,12 +66,12 @@
 }
 
 .course-1 {
-    background-color: #008b8b;
+    background-color: #daa520;
 }
 
 .course-1:hover {
+    background-color: #b8860b;
     cursor: pointer;
-    background-color: #006969;
 }
 
 .course-2 {
@@ -79,10 +83,75 @@
     background-color: #6b21b1;
 }
 
-.course-1 a,
-.course-2 a {
-    color: #ffffff;
-    text-decoration: none;
+.course-3 {
+    background-color: #008b8b;
+}
+
+.course-3:hover {
+    cursor: pointer;
+    background-color: #006969;
+}
+
+.course-4 {
+    background-color: #ff8c00;
+}
+
+.course-4:hover {
+    background-color: #ffa500;
+    cursor: pointer;
+}
+
+.course-5 {
+    background-color: #2e8b57;
+}
+
+.course-5:hover {
+    background-color: #3cb371;
+    cursor: pointer;
+}
+
+.course-6 {
+    background-color: #f08080;
+}
+
+.course-6:hover {
+    background-color: #ff7f50;
+    cursor: pointer;
+}
+
+.modal-curso {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #888888;
+    box-sizing: border-box;
+}
+
+.modal-botones {
+    margin-top: 0.5em;
+    gap: 0.5em;
+}
+
+#boton-ir-curso,
+#boton-cerrar-modal {
+    background-color: #808080;
+}
+
+#boton-ir-curso:hover,
+#boton-cerrar-modal:hover {
+    background-color: #696969;
 }
 
 /*DIAS DE LA SEMANA*/

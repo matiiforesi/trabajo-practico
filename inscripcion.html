@@ -2,15 +2,16 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/inscripcion.css">
-    <link rel="stylesheet" href="./styles/curso.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Inscripción</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/carrito.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/inscripcion.css">
+    <link rel="stylesheet" href="./styles/curso.css">
 </head>
 
 <body>
@@ -25,18 +26,18 @@
                 <option value="JavaScript"></option>
                 <option value="HTML & CSS"></option>
                 <option value="Python"></option>
-                <option value="C"></option>
+                <option value="SQL"></option>
                 <option value="Java"></option>
                 <option value="Diseño UI/UX"></option>
             </datalist>
         </div>
 
         <div class="contenedor-botones-sesion">
-            <a href="./carrito.html"><button class="cart"><img src="./assets/cart.png"
-                        alt="carrito"><span>1</span></button></a>
+            <button class="cart"><img src="./assets/cart.png" alt="carrito"><span>0</span></button></a>
             <a href="./inicioSesion.html" id="iniciarSesionBtn"><button class="button-der">Iniciar sesión</button></a>
             <a href="./registro.html" id="registrarseBtn"><button class="button-der">Registrarse</button></a>
             <button id="cerrarSesionBtn" class="button-der">Cerrar sesión</button>
+            <button id="eliminarUsuarioBtn" class="button-der">Eliminar usuario</button>
         </div>
     </header>
 
@@ -50,6 +51,19 @@
     </nav>
 
     <main class="course-registration">
+        <aside id="sidebar" class="sidebar">
+            <div class="titulo">
+                <h2>Carrito</h2>
+                <button id="cerrarSidebarBtn" class="cerrarSidebarBtn">X</button>
+            </div>
+            <p class="mensajeVacio">Tu carrito está vacío</p>
+            <ul id="listaSidebar"></ul>
+            <div class="totalSidebar">
+                <p>Total: <span id="precioSidebar"></span></p>
+                <a href="./carrito.html" class="irCarritoBtn">Ver Carrito</a>
+            </div>
+        </aside>
+
         <section>
             <h2>NOMBRE DEL CURSO</h2>
             <h3>Formulario de Inscripción</h3>
@@ -59,7 +73,7 @@
                     <input type="text" placeholder="Apellido" required>
                     <input type="number" placeholder="DNI" required>
                     <input type="email" placeholder="Email" required>
-                    <input type="tel" id="tel-number" placeholder="Teléfono">
+                    <input type="tel" id="tel-number" placeholder="Teléfono (opcional)">
                     <div class="delete-person" id="delete-person">
                         <img src="./assets/circulo-negativo.png" alt="delete">
                     </div>
@@ -71,7 +85,7 @@
                 </div>
 
                 <div class="registration-fee">
-                    <div class="fee-amount" id="feeAmount">$20.00</div>
+                    <div class="fee-amount" id="feeAmount"></div>
                     <button type="button" id="registerButton" class="boton-inscripcion">REGISTRAR</button>
                     <a href="./home.html"><button type="button" class="boton-volver">CANCELAR</button></a>
                 </div>
@@ -213,6 +227,8 @@
 
     </footer>
 
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/carrito.js"></script>
     <script src="./scripts/sesion.js"></script>
     <script src="./scripts/inscripcion.js"></script>
 </body>

@@ -39,7 +39,6 @@ input {
 
 .boton-aceptar:hover {
     background-color: #28a745;
-    color: white;
 }
 
 .boton-cancelar {
@@ -48,7 +47,6 @@ input {
 
 .boton-cancelar:hover {
     background-color: #dc3545;
-    color: white;
 }
 
 .frases {

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/carrito.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/calendario.css">
 </head>
@@ -24,18 +25,18 @@
                 <option value="JavaScript"></option>
                 <option value="HTML & CSS"></option>
                 <option value="Python"></option>
-                <option value="C"></option>
+                <option value="SQL"></option>
                 <option value="Java"></option>
                 <option value="Diseño UI/UX"></option>
             </datalist>
         </div>
 
         <div class="contenedor-botones-sesion">
-            <a href="./carrito.html"><button class="cart"><img src="./assets/cart.png"
-                        alt="carrito"><span>1</span></button></a>
+            <button class="cart"><img src="./assets/cart.png" alt="carrito"><span>0</span></button></a>
             <a href="./inicioSesion.html" id="iniciarSesionBtn"><button class="button-der">Iniciar sesión</button></a>
             <a href="./registro.html" id="registrarseBtn"><button class="button-der">Registrarse</button></a>
             <button id="cerrarSesionBtn" class="button-der">Cerrar sesión</button>
+            <button id="eliminarUsuarioBtn" class="button-der">Eliminar usuario</button>
         </div>
     </header>
 
@@ -49,6 +50,19 @@
     </nav>
 
     <main>
+        <aside id="sidebar" class="sidebar">
+            <div class="titulo">
+                <h2>Carrito</h2>
+                <button id="cerrarSidebarBtn" class="cerrarSidebarBtn">X</button>
+            </div>
+            <p class="mensajeVacio">Tu carrito está vacío</p>
+            <ul id="listaSidebar"></ul>
+            <div class="totalSidebar">
+                <p>Total: <span id="precioSidebar"></span></p>
+                <a href="./carrito.html" class="irCarritoBtn">Ver Carrito</a>
+            </div>
+        </aside>
+
         <section>
             <div class="calendar-header">
                 <img src="./assets/arrow-left-black_7482887.png" alt="Mes anterior" class="arrow-left">
@@ -73,52 +87,54 @@
                     <div class="empty-day"></div>
                     <div class="empty-day"></div>
                     <div class="empty-day"></div>
-                    <div class="day">1<a href="./cursoPresencial.html"><button class="course-1">HTML & CSS</button></a>
-                    </div>
-                    <div class="day">2</div>
+                    <div class="day">1<button class="course-5" data-curso="Python">Python</button></div>
+                    <div class="day">2<button class="course-6" data-curso="SQL">SQL</button></div>
 
                     <div class="day">3</div>
-                    <div class="day">4</div>
-                    <div class="day">5<a href="./cursoVirtual.html"><button class="course-2">Diseño UI/UX</button></a>
-                    </div>
-                    <div class="day">6</div>
-                    <div class="day">7</div>
-                    <div class="day">8<a href="./cursoPresencial.html"><button class="course-1">HTML & CSS</button></a>
-                    </div>
-                    <div class="day">9</div>
+                    <div class="day">4<button class="course-1" data-curso="Java">Java</button></div>
+                    <div class="day">5<button class="course-2" data-curso="Diseño UI/UX">Diseño UI/UX</button></div>
+                    <div class="day">6<button class="course-3" data-curso="HTML & CSS">HTML & CSS</button></div>
+                    <div class="day">7<button class="course-4" data-curso="JavaScript">JavaScript</button></div>
+                    <div class="day">8<button class="course-5" data-curso="Python">Python</button></div>
+                    <div class="day">9<button class="course-6" data-curso="SQL">SQL</button></div>
 
                     <div class="day">10</div>
-                    <div class="day">11</div>
-                    <div class="day">12<a href="./cursoVirtual.html"><button class="course-2">Diseño UI/UX</button></a>
-                    </div>
-                    <div class="day">13</div>
-                    <div class="day">14</div>
-                    <div class="day">15<a href="./cursoPresencial.html"><button class="course-1">HTML & CSS</button></a>
-                    </div>
-                    <div class="day">16</div>
+                    <div class="day">11<button class="course-1" data-curso="Java">Java</button></div>
+                    <div class="day">12<button class="course-2" data-curso="Diseño UI/UX">Diseño UI/UX</button></div>
+                    <div class="day">13<button class="course-3" data-curso="HTML & CSS">HTML & CSS</button></div>
+                    <div class="day">14<button class="course-4" data-curso="JavaScript">JavaScript</button></div>
+                    <div class="day">15<button class="course-5" data-curso="Python">Python</button></div>
+                    <div class="day">16<button class="course-6" data-curso="SQL">SQL</button></div>
 
                     <div class="day">17</div>
-                    <div class="day">18</div>
-                    <div class="day">19<a href="./cursoVirtual.html"><button class="course-2">Diseño UI/UX</button></a>
-                    </div>
-                    <div class="day">20</div>
-                    <div class="day">21</div>
-                    <div class="day">22<a href="./cursoPresencial.html"><button class="course-1">HTML & CSS</button></a>
-                    </div>
-                    <div class="day">23</div>
+                    <div class="day">18<button class="course-1" data-curso="Java">Java</button></div>
+                    <div class="day">19<button class="course-2" data-curso="Diseño UI/UX">Diseño UI/UX</button></div>
+                    <div class="day">20<button class="course-3" data-curso="HTML & CSS">HTML & CSS</button></div>
+                    <div class="day">21<button class="course-4" data-curso="JavaScript">JavaScript</button></div>
+                    <div class="day">22<button class="course-5" data-curso="Python">Python</button></div>
+                    <div class="day">23<button class="course-6" data-curso="SQL">SQL</button></div>
 
                     <div class="day">24</div>
-                    <div class="day">25</div>
-                    <div class="day">26<a href="./cursoVirtual.html"><button class="course-2">Diseño UI/UX</button></a>
+                    <div class="day">25<button class="course-1" data-curso="Java">Java</button></div>
+                    <div class="day">26<button class="course-2" data-curso="Diseño UI/UX">Diseño UI/UX</button></div>
+                    <div class="day">27<button class="course-3" data-curso="HTML & CSS">HTML & CSS</button></div>
+                    <div class="day">28<button class="course-4" data-curso="JavaScript">JavaScript</button></div>
+                    <div class="day">29<button class="course-5" data-curso="Python">Python</button></div>
+                    <div class="day">30<button class="course-6" data-curso="SQL">SQL</button></div>
+                    <div class="empty-day"></div>
+                    <div class="empty-day"></div>
+                    <div class="empty-day"></div>
+                </div>
+            </div>
+
+            <div class="modal-curso">
+                <div class="modal-contenido">
+                    <h2 id="modal-titulo"></h2>
+                    <p id="modal-modalidad"></p>
+                    <div class="modal-botones">
+                        <button id="boton-ir-curso">Ir al curso</button>
+                        <button id="boton-cerrar-modal">Cerrar</button>
                     </div>
-                    <div class="day">27</div>
-                    <div class="day">28</div>
-                    <div class="day">29<a href="./cursoPresencial.html"><button class="course-1">HTML & CSS</button></a>
-                    </div>
-                    <div class="day">30</div>
-                    <div class="empty-day"></div>
-                    <div class="empty-day"></div>
-                    <div class="empty-day"></div>
                 </div>
             </div>
         </section>
@@ -246,7 +262,10 @@
 
     </footer>
 
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/carrito.js"></script>
     <script src="./scripts/sesion.js"></script>
+    <script src="./scripts/calendario.js"></script>
 </body>
 
 </html>

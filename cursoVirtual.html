@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="styles/carrito.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/curso.css">
 </head>
@@ -24,18 +25,18 @@
                 <option value="JavaScript"></option>
                 <option value="HTML & CSS"></option>
                 <option value="Python"></option>
-                <option value="C"></option>
+                <option value="SQL"></option>
                 <option value="Java"></option>
                 <option value="Diseño UI/UX"></option>
             </datalist>
         </div>
 
         <div class="contenedor-botones-sesion">
-            <a href="./carrito.html"><button class="cart"><img src="./assets/cart.png"
-                        alt="carrito"><span>1</span></button></a>
+            <button class="cart"><img src="./assets/cart.png" alt="carrito"><span>0</span></button></a>
             <a href="./inicioSesion.html" id="iniciarSesionBtn"><button class="button-der">Iniciar sesión</button></a>
             <a href="./registro.html" id="registrarseBtn"><button class="button-der">Registrarse</button></a>
             <button id="cerrarSesionBtn" class="button-der">Cerrar sesión</button>
+            <button id="eliminarUsuarioBtn" class="button-der">Eliminar usuario</button>
         </div>
     </header>
 
@@ -49,6 +50,19 @@
     </nav>
 
     <main>
+        <aside id="sidebar" class="sidebar">
+            <div class="titulo">
+                <h2>Carrito</h2>
+                <button id="cerrarSidebarBtn" class="cerrarSidebarBtn">X</button>
+            </div>
+            <p class="mensajeVacio">Tu carrito está vacío</p>
+            <ul id="listaSidebar"></ul>
+            <div class="totalSidebar">
+                <p>Total: <span id="precioSidebar"></span></p>
+                <a href="./carrito.html" class="irCarritoBtn">Ver Carrito</a>
+            </div>
+        </aside>
+
         <section>
             <div class="contenedor-curso">
                 <div class="imagen-curso">
@@ -56,22 +70,8 @@
                 </div>
 
                 <div class="detalle-curso">
-                    <h3>CURSO VIRTUAL</h3>
-                    <ul>
-                        <li>Valor: $X,XX</li>
-                        <li>Modalidad: Virtual</li>
-                        <li>Tiempo de dedicación necesario: XX hs.</li>
-                        <li>Descripción del curso:
-                            <p class="detalle-curso__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Totam, maxime minima odit iusto illum necessitatibus est recusandae quos, sapiente
-                                rem placeat delectus
-                                fugiat. Harum nisi provident optio numquam soluta placeat. Lorem ipsum dolor sit amet
-                                consectetur adipisicing elit. Praesentium in fugiat commodi explicabo corporis vero at
-                                esse inventore asperiores voluptatibus dignissimos, minima veniam atque velit corrupti
-                                facere nesciunt omnis amet!</p>
-                        </li>
-                        <li>Requisitos previos: ---.</li>
-                    </ul>
+                    <h3></h3>
+                    <ul></ul>
                     <div class="contenedor-botones-curso">
                         <a href="./carrito.html"><button class="boton-inscripcion">COMPRAR</button></a>
                         <a href="./home.html"><button class="boton-volver">VOLVER</button></a>
@@ -257,7 +257,7 @@
 
         <aside class="contenedor-publicidad-cursos">
 
-            <div class="publicidades">
+            <div class="publicidades" data-curso='{"titulo":"Curso de JavaScript"}'>
                 <div class="imagen">
                     <img src="./assets/curso-virtual.jpg" alt="imagen de curso">
                 </div>
@@ -267,7 +267,8 @@
                     <div class="detalle-de-curso-der">
                         <h4>JavaScript</h4>
                         <h6>Virtual</h6>
-                        <a href="./cursoVirtual.html"><button class="boton-inscripcion">Ver Detalle</button></a>
+                        <a href="./cursoVirtual.html?pagina=cursoVirtual.html"><button class="boton-inscripcion">Ver
+                                Detalle</button></a>
                         <div class="publicidades-precio">
                             <span>$84.99</span>
                         </div>
@@ -275,7 +276,7 @@
                 </div>
             </div>
 
-            <div class="publicidades">
+            <div class="publicidades" data-curso='{"titulo":"Curso de Diseño UI/UX"}'>
                 <div class="imagen">
                     <img src="./assets/curso-presencial-.jpg" alt="imagen de curso">
                 </div>
@@ -285,7 +286,8 @@
                     <div class="detalle-de-curso-der">
                         <h4>Diseño UI/UX</h4>
                         <h6>Presencial</h6>
-                        <a href="./cursoPresencial.html"><button class="boton-inscripcion">Ver Detalle</button></a>
+                        <a href="./cursoPresencial.html?pagina=cursoPresencial.html"><button
+                                class="boton-inscripcion">Ver Detalle</button></a>
                         <div class="publicidades-precio">
                             <span>$69.99</span>
                         </div>
@@ -293,7 +295,7 @@
                 </div>
             </div>
 
-            <div class="publicidades">
+            <div class="publicidades" data-curso='{"titulo":"Curso de Java"}'>
                 <div class="imagen">
                     <img src="./assets/curso-presencial-.jpg" alt="imagen de curso">
                 </div>
@@ -303,7 +305,8 @@
                     <div class="detalle-de-curso-der">
                         <h4>Java</h4>
                         <h6>Presencial</h6>
-                        <a href="./cursoPresencial.html"><button class="boton-inscripcion">Ver Detalle</button></a>
+                        <a href="./cursoPresencial.html?pagina=cursoPresencial.html"><button
+                                class="boton-inscripcion">Ver Detalle</button></a>
                         <div class="publicidades-precio">
                             <span>$84.99</span>
                         </div>
@@ -311,7 +314,7 @@
                 </div>
             </div>
 
-            <div class="publicidades">
+            <div class="publicidades" data-curso='{"titulo":"Curso de Python"}'>
                 <div class="imagen">
                     <img src="./assets/curso-virtual.jpg" alt="imagen de curso">
                 </div>
@@ -321,7 +324,8 @@
                     <div class="detalle-de-curso-der">
                         <h4>Python</h4>
                         <h6>Virtual</h6>
-                        <a href="./cursoVirtual.html"><button class="boton-inscripcion">Ver Detalle</button></a>
+                        <a href="./cursoVirtual.html?pagina=cursoVirtual.html"><button class="boton-inscripcion">Ver
+                                Detalle</button></a>
                         <div class="publicidades-precio">
                             <span>$84.99</span>
                         </div>
@@ -453,7 +457,10 @@
 
     </footer>
 
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/carrito.js"></script>
     <script src="./scripts/sesion.js"></script>
+    <script src="./scripts/curso.js"></script>
 </body>
 
 </html>

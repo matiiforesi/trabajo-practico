@@ -8,10 +8,22 @@
     margin-top: 1.25em;
     gap: 3.125em;
 
-    img {
+    /*img {
         height: 4.25rem;
         width: 7.5rem;
-    }
+    }*/
+}
+
+.carro-vacio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carro-vacio p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
 
 .curso-desc {
@@ -153,6 +165,80 @@
 .total {
     color: #808080;
     font-weight: 600;
+}
+
+.sidebar {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #f0f0f0;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.cerrarSidebarBtn,
+.eliminar-curso {
+    background-color: #808080;
+    padding: 5px 10px;
+}
+
+.cerrarSideBarBtn:hover {
+    background-color: #696969;
+}
+
+.mensajeVacio {
+    text-align: center;
+    margin: 20px 0;
+    display: none;
+}
+
+#listaSidebar {
+    padding: 10px;
+    margin: 20px 0;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+#listaSidebar li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.eliminar-curso:hover {
+    background-color: #dc3545;
+}
+
+.totalSidebar {
+    padding: 10px 0;
+    border-top: 1px solid #dddddd;
+    text-align: center;
+}
+
+.irCarritoBtn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #008000;
+    margin-top: 10px;
+}
+
+.irCarritoBtn:hover {
+    background-color: #90ee90;
 }
 
 /*DESDE px HASTA 768px INCUIDO*/
