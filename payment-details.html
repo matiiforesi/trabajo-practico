@@ -52,10 +52,10 @@
     <main>
         <aside id="sidebar" class="sidebar">
             <div class="titulo">
-                <h2>Carrito</h2>
+                <h1>Carrito</h1>
                 <button id="cerrarSidebarBtn" class="cerrarSidebarBtn">X</button>
             </div>
-            <p class="mensajeVacio">Tu carrito está vacío</p>
+            <p class="mensajeVacio">Tu carro está vacío.</p>
             <ul id="listaSidebar"></ul>
             <div class="totalSidebar">
                 <p>Total: <span id="precioSidebar"></span></p>
@@ -73,17 +73,17 @@
                     <label for="card-number">Número de tarjeta</label>
                     <div class="card-number-container">
                         <img src="./assets/tarjeta.png" class="tarjeta">
-                        <input type="number" id="card-number" placeholder="XXXX - XXXX - XXXX - XXXX" required>
+                        <input type="text" id="card-number" placeholder="XXXX - XXXX - XXXX - XXXX" required>
                     </div>
                 </div>
 
                 <div class="expiration-date">
-                    <div class="lll">
-                        <label for="expiration-date">Fecha de expiración</label>
+                    <div>
+                        <label>Fecha de expiración</label>
                     </div>
-                    <div class="row">
-                        <input type="number" id="expiration-date-mm" placeholder="MM" required>
-                        <input type="number" id="expiration-date-yy" placeholder="YY" required>
+                    <div>
+                        <input type="number" id="expiration-date mm" placeholder="MM" required>
+                        <input type="number" id="expiration-date yy" placeholder="YY" required>
                     </div>
                 </div>
 
@@ -110,10 +110,7 @@
             <div>
                 <h5>DATOS DEL GRUPO</h5>
                 <ul class="listas-footer">
-                    <li>Cicero Mora - 46022589</li>
-                    <li>Santillan Sabrina - 37351824</li>
                     <li>Foresi Matias - 45870487</li>
-                    <li>Felipe Sgüerzo - 47061231</li>
                 </ul>
             </div>
 
@@ -230,6 +227,7 @@
     <script src="./scripts/navbar.js"></script>
     <script src="./scripts/carrito.js"></script>
     <script src="./scripts/sesion.js"></script>
+    <script src="./scripts/payment-details.js"></script>
 </body>
 
 </html>

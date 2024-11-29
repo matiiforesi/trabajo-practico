@@ -1,6 +1,5 @@
 body {
-    overflow-x: hidden;
-    /* Evita el desplazamiento horizontal */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
 /*SLIDER*/
@@ -16,8 +15,7 @@ body {
 .slider__item {
     min-width: 100%;
     box-sizing: border-box;
-    position: relative;
-    /* Posiciona el texto sobre cada una de las imágenes */
+    position: relative; /* Posiciona el texto sobre cada una de las imágenes */
     display: flex;
     justify-content: center;
     align-items: center;

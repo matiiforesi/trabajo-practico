@@ -106,7 +106,7 @@ h1 {
     color: #3498db;
 }
 
-.submit {
+#agregarGiftCard {
     width: 100%;
     padding: 10px;
     background-color: #3498db;
@@ -118,7 +118,7 @@ h1 {
     margin-top: 10px;
 }
 
-.submit:hover {
+#agregarGiftCard:hover {
     background-color: #2980b9;
 }
 

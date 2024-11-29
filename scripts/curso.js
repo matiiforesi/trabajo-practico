@@ -43,12 +43,13 @@ const cursos = {
     }
 };
 
-function actualizarDetalleCurso() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const tituloCurso = urlParams.get("curso");
+const urlParams = new URLSearchParams(window.location.search);
+const tituloCurso = urlParams.get("curso");
 
-    // Busca el curso en el objeto 'cursos'.
-    const datosCurso = cursos[tituloCurso];
+// Busca el curso en el objeto 'cursos'.
+const datosCurso = cursos[tituloCurso];
+
+function actualizarDetalleCurso() {
     if (datosCurso) {
         const detalleCurso = document.querySelector(".detalle-curso");
         detalleCurso.querySelector("h3").textContent = `${datosCurso.titulo}`;
@@ -67,13 +68,12 @@ function actualizarDetalleCurso() {
                     voluptatibus saepe quibusdam quaerat?
                 </p>
             </li>
-            <li>Requisitos previos: ---</li>`;
+        `;
 
         // Configura dinámicamente el enlace del botón "Inscribirse", usado para llevar info al formulario de inscripción.
         const linkInscripcion = document.querySelector("#linkInscripcion");
         if (linkInscripcion) {
             const urlInscripcion = `./inscripcion.html?curso=${encodeURIComponent(datosCurso.titulo)}&valor=${encodeURIComponent(datosCurso.valor)}`;
-            console.log("URL de Inscripción generada:", urlInscripcion);
             linkInscripcion.setAttribute("href", urlInscripcion);
         }
     }
@@ -91,6 +91,25 @@ function configurarEnlaces() {
             const boton = publicidad.querySelector("a");
             boton.setAttribute("href", `./${datosCursoActual.pagina}?curso=${encodeURIComponent(datosCursoActual.titulo)}`);
         }
+    });
+}
+
+const botonComprar = document.querySelector("#buyButton");
+if (botonComprar) {
+    botonComprar.addEventListener("click", (e) => {
+        e.preventDefault()
+        const cursoSeleccionado = {
+            nombre: document.querySelector(".detalle-curso h3").textContent,
+            precio: parseFloat(
+                document.querySelector(".detalle-curso ul li:nth-child(1)").textContent.replace("Valor: $", "")
+            ),
+            modalidad: "Virtual",
+            cantidad: 1 // Solo para cursos presenciales, pero se puede mantener como 1 por consistencia.
+        };
+
+        // Llamada a la función de carrito.js para agregar el curso al carrito.
+        agregarCurso(cursoSeleccionado);
+        alert("¡Curso agregado al carrito!");
     });
 }
 

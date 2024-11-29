@@ -70,4 +70,3 @@ eliminarUsuarioBtn.addEventListener('click', function () {
         location.href = "./home.html"
     }
 });
-

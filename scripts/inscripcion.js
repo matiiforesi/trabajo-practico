@@ -169,7 +169,21 @@ botonRegistro.addEventListener("click", (event) => {
 });
 
 confirmarModal.onclick = function () {
-    window.location.href = "./carrito.html";
+    const nombreCursoSeleccionado = urlParams.get("curso");
+    const tarifaTotal = parseFloat(tarifa.textContent.replace('$', '').replace(',', '.'));
+    const cantidadPersonas = contadorPersonas;
+
+    const curso = {
+        nombre: nombreCursoSeleccionado,
+        precio: tarifaTotal,
+        modalidad: 'Presencial',
+        cantidad: cantidadPersonas
+    };
+
+    agregarCurso(curso);
+    alert("¡Curso agregado al carrito!");
+    modal.style.display = "none";
+    window.location.href = "./home.html"
 };
 
 cerrarModal.onclick = function () {
